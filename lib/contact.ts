@@ -1,0 +1,5 @@
+export const CONTACT_PHONE_E164 = '+966591777722';
+export const CONTACT_PHONE_DISPLAY = '+966 59 177 7722';
+export const CONTACT_WHATSAPP_NUMBER = CONTACT_PHONE_E164.replace('+', '');
+export const CONTACT_PHONE_HREF = `tel:${CONTACT_PHONE_E164}`;
+export const CONTACT_WHATSAPP_HREF = `https://wa.me/${CONTACT_WHATSAPP_NUMBER}`;

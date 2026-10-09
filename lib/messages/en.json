@@ -1,0 +1,206 @@
+{
+  "name": "Creative Orbit",
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "opportunities": "Opportunities",
+    "partners": "Partners",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "shared": {
+    "discuss": "Discuss an opportunity",
+    "explore": "Explore our capabilities",
+    "contact": "Contact us",
+    "services": "Our services",
+    "learn": "Learn more",
+    "all": "Explore all capabilities",
+    "whatsapp": "Continue on WhatsApp",
+    "phone": "Call Creative Orbit",
+    "location": "Jeddah, Saudi Arabia",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "home": "Home"
+  },
+  "home": {
+    "eyebrow": "CREATIVE ORBIT · JEDDAH, SAUDI ARABIA",
+    "title": "Turning business connections into meaningful growth.",
+    "lead": "We connect businesses, projects, investors, and strategic partners through marketing, business development, and opportunity creation.",
+    "introTitle": "From connection to opportunity",
+    "intro": "Creative Orbit builds bridges between companies, projects, investors, customers, and strategic partners. We discover opportunities, develop relationships, and help shape collaborations with a path to sustainable growth.",
+    "capTitle": "A partner in the work behind growth",
+    "capLead": "Understand the opportunity. Connect the right people. Build a path forward.",
+    "processTitle": "A considered path from first conversation to shared growth",
+    "ctaTitle": "A promising connection can be the start of something more.",
+    "ctaLead": "Tell us what you are building, exploring, or hoping to grow.",
+    "localContext": "Jeddah, Saudi Arabia",
+    "regionalAmbition": "Local understanding. Regional ambition.",
+    "imageAlt": "Business colleagues collaborating around a table",
+    "connectionCaption": "Connection creates possibility",
+    "processEyebrow": "03 — FROM CONNECTION TO GROWTH",
+    "valuesEyebrow": "04 — THE WAY WE WORK",
+    "valuesHeadline": "Built on trust.",
+    "valuesSubheadline": "Focused on what’s next."
+  },
+  "about": {
+    "eyebrow": "ABOUT CREATIVE ORBIT",
+    "title": "A business partner built around possibility.",
+    "lead": "Creative Orbit is a Saudi company based in Jeddah, bringing marketing, business development, opportunity creation, and strategic partnerships into one connected perspective.",
+    "body": "We believe real value comes from understanding an opportunity, reaching the right people, building trust, and turning a conversation into a partnership or a path to growth.",
+    "visionTitle": "Our vision",
+    "vision": "To become an influential business platform and strategic partner in opportunity creation, partnerships, business development, and investment connections.",
+    "missionTitle": "Our mission",
+    "mission": "To create opportunities and strategic relationships that deliver real value through marketing, commercial, and strategic solutions.",
+    "leadershipTitle": "Leadership",
+    "leader": "Mohammed Ayedh Al-Sufyani",
+    "role": "Chief Executive Officer",
+    "bio": "Mohammed leads business development and strategic partnerships, drawing on experience in commercial relationships, negotiation, opportunity discovery, and investment opportunities.",
+    "perspectiveEyebrow": "OUR PERSPECTIVE",
+    "valuesEyebrow": "OUR VALUES",
+    "ctaTitle": "A partnership starts with understanding.",
+    "ctaLead": "Tell us about the opportunity you have in mind."
+  },
+  "servicesPage": {
+    "eyebrow": "WHAT WE DO",
+    "title": "Capabilities connected by one purpose.",
+    "lead": "A connected set of marketing and business capabilities to help organizations reach customers, partners, investors, and new markets.",
+    "cta": "Discuss this service",
+    "ctaTitle": "Let’s explore where the opportunity leads.",
+    "ctaLead": "Talk with us about a service, a partnership, or a market you are exploring."
+  },
+  "opportunities": {
+    "eyebrow": "OPPORTUNITIES & PARTNERSHIPS",
+    "title": "The right connection can change what comes next.",
+    "lead": "We help explore commercial and investment opportunities, connect relevant parties, and develop relationships that may lead to collaboration.",
+    "processTitle": "A thoughtful way to move forward",
+    "ctaTitle": "Have an opportunity in mind?",
+    "ctaLead": "Start a conversation with our team.",
+    "approachEyebrow": "OUR APPROACH",
+    "disclaimerEyebrow": "A CONVERSATION, NOT A PROMISE",
+    "disclaimerTitle": "Every opportunity is different.",
+    "disclaimerBody": "We begin by understanding the goals and the people involved. Any collaboration depends on fit, due diligence, and agreement by the parties. Creative Orbit does not operate a public investment marketplace or guarantee investment outcomes."
+  },
+  "experience": {
+    "eyebrow": "EXPERIENCE & PROJECTS",
+    "title": "A new company, grounded in practical experience.",
+    "lead": "Creative Orbit is in its launch phase. The company builds on leadership experience in business development, strategic partnerships, opportunity creation, and commercial initiatives.",
+    "noteTitle": "Our work is just beginning",
+    "note": "Projects, case studies, recommendations, awards, and certificates will be added as they become available and are verified.",
+    "verifiedNote": "We will share verified project information as Creative Orbit’s work develops.",
+    "ctaTitle": "The next chapter starts with a conversation.",
+    "ctaLead": "Tell us what you would like to create together."
+  },
+  "contact": {
+    "eyebrow": "START A CONVERSATION",
+    "title": "Tell us what you are looking to build.",
+    "lead": "Discuss a marketing need, a business opportunity, a partnership, or a new market you are exploring.",
+    "formTitle": "Prepare an inquiry",
+    "name": "Full name",
+    "company": "Company (optional)",
+    "email": "Email (optional)",
+    "service": "Area of interest",
+    "message": "Tell us a little about your inquiry",
+    "required": "This field is required.",
+    "choose": "Choose an area",
+    "submit": "Continue on WhatsApp",
+    "privacy": "By continuing, you will open WhatsApp with a draft message. You can review and send it there.",
+    "success": "Your WhatsApp draft is ready. Review it and send it in WhatsApp.",
+    "phoneLabel": "Phone & WhatsApp",
+    "placeholder": "Select a service",
+    "types": [
+      "General inquiry",
+      "Marketing & advertising",
+      "Event management",
+      "Market research",
+      "Business development",
+      "Strategic partnership",
+      "Investment relations",
+      "Business expansion",
+      "Real estate",
+      "Other"
+    ]
+  },
+  "privacy": {
+    "eyebrow": "PRIVACY",
+    "title": "Privacy policy — draft for review",
+    "lead": "This page is a working template. It is not an approved company policy and must be completed and reviewed before publication.",
+    "note": "Company review required",
+    "body": "The final policy should explain what information Creative Orbit collects, why it is collected, how it is stored and protected, who may receive it, how long it is retained, and how visitors may exercise their privacy rights. Add the responsible contact details and any applicable legal terms before launch.",
+    "pending": "Contact details and the final policy text are pending company approval."
+  },
+  "services": {
+    "items": [
+      {
+        "name": "Advertising & Marketing",
+        "description": "Marketing and advertising solutions that build a stronger presence, reach target audiences, and reinforce brand value."
+      },
+      {
+        "name": "Event Management",
+        "description": "Planning and organizing events and conferences that strengthen brand presence and create opportunities to connect."
+      },
+      {
+        "name": "Market Research & Opinion Polls",
+        "description": "Collecting and analyzing information about markets, customers, and opinions to support better-informed decisions."
+      },
+      {
+        "name": "Business Development & Opportunity Creation",
+        "description": "Discovering and developing commercial and investment opportunities and opening new paths for growth."
+      },
+      {
+        "name": "Strategic Partnerships & Alliances",
+        "description": "Developing partnerships among companies, projects, investors, and relevant organizations to create shared value."
+      },
+      {
+        "name": "Investment Attraction & Investor Relations",
+        "description": "Developing channels to reach investors and connect projects with potential investors and partners."
+      },
+      {
+        "name": "Local & International Business Expansion",
+        "description": "Exploring new markets and building relationships and partnerships that support expansion."
+      },
+      {
+        "name": "Real Estate Activities",
+        "description": "Real estate activities on a fee or contract basis, within the company's registered scope."
+      }
+    ]
+  },
+  "values": {
+    "items": [
+      "Trust",
+      "Partnership",
+      "Opportunity creation",
+      "Innovation",
+      "Results",
+      "Professionalism",
+      "Ambition",
+      "Sustainability"
+    ]
+  },
+  "steps": {
+    "items": [
+      "Understand the objective",
+      "Explore relevant opportunities",
+      "Connect the right parties",
+      "Develop the partnership",
+      "Explore the path to growth"
+    ]
+  },
+  "partnersList": {
+    "items": [
+      "Sadeem For IT",
+      "Weqayati Al Tijariya Co.",
+      "Kayan Mattress Co.",
+      "Eamar Altanmia for construction",
+      "شركة كفاء الهندسية"
+    ]
+  },
+  "partners": {
+    "eyebrow": "OUR PARTNER ECOSYSTEM",
+    "title": "Growth is built together.",
+    "lead": "We value the relationships and collaboration that connect companies, projects, and people around shared opportunity.",
+    "note": "Names are presented as provided in the company profile. Logos and specific relationship details will be added when verified.",
+    "ctaTitle": "Let’s explore a partnership.",
+    "ctaLead": "Tell us about the kind of collaboration you are looking for."
+  }
+}
