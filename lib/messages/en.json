@@ -1,206 +1,417 @@
 {
-  "name": "Creative Orbit",
+  "name": "Creative Orbit Marketing Co.",
   "navigation": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "services": "Services",
-    "opportunities": "Opportunities",
+    "opportunities": "Opportunities & Partnerships",
     "partners": "Partners",
-    "experience": "Experience",
-    "contact": "Contact"
+    "experience": "Experience & Projects",
+    "contact": "Contact Us"
   },
   "shared": {
-    "discuss": "Discuss an opportunity",
-    "explore": "Explore our capabilities",
-    "contact": "Contact us",
-    "services": "Our services",
-    "learn": "Learn more",
-    "all": "Explore all capabilities",
+    "brandStatement": "Creating Opportunities. Building Partnerships. Driving Growth.",
+    "brandName": "Creative Orbit",
+    "brandArabicName": "شركة كرييتيف أوربيت ماركتينج",
+    "brandSubtitle": "MARKETING CO.",
+    "discuss": "Discuss an Opportunity",
+    "explore": "Explore Our Capabilities",
+    "contact": "Contact Us",
+    "services": "Our Services",
+    "learn": "Learn More",
+    "all": "All Services",
     "whatsapp": "Continue on WhatsApp",
     "phone": "Call Creative Orbit",
     "location": "Jeddah, Saudi Arabia",
-    "menu": "Open menu",
-    "close": "Close menu",
-    "home": "Home"
+    "menu": "Open Menu",
+    "close": "Close Menu",
+    "home": "Home",
+    "opportunityCta": "Discuss a Business Opportunity",
+    "exploreCapabilities": "Explore Our Capabilities",
+    "orbitConcept": "From Connection to Sustainable Growth"
   },
   "home": {
-    "eyebrow": "CREATIVE ORBIT · JEDDAH, SAUDI ARABIA",
+    "eyebrow": "CREATIVE ORBIT · OPPORTUNITY CREATION & STRATEGIC GROWTH",
     "title": "Turning business connections into meaningful growth.",
     "lead": "We connect businesses, projects, investors, and strategic partners through marketing, business development, and opportunity creation.",
-    "introTitle": "From connection to opportunity",
-    "intro": "Creative Orbit builds bridges between companies, projects, investors, customers, and strategic partners. We discover opportunities, develop relationships, and help shape collaborations with a path to sustainable growth.",
-    "capTitle": "A partner in the work behind growth",
-    "capLead": "Understand the opportunity. Connect the right people. Build a path forward.",
-    "processTitle": "A considered path from first conversation to shared growth",
-    "ctaTitle": "A promising connection can be the start of something more.",
-    "ctaLead": "Tell us what you are building, exploring, or hoping to grow.",
+    "introTitle": "From Connection to Opportunity",
+    "intro": "Creative Orbit builds bridges between companies, projects, investors, customers, and strategic partners. We discover opportunities, develop commercial relationships, and help shape collaborations that create a sustainable path to expansion.",
+    "capTitle": "A strategic partner in the work behind growth",
+    "capLead": "Understand the opportunity. Connect the right people. Engineer actionable paths forward across diverse business sectors.",
+    "processTitle": "A considered five-step approach from first dialogue to shared growth",
+    "ctaTitle": "A promising connection can be the start of something transformative.",
+    "ctaLead": "Tell us what you are building, exploring, or hoping to scale. Let’s start a focused, meaningful conversation.",
     "localContext": "Jeddah, Saudi Arabia",
-    "regionalAmbition": "Local understanding. Regional ambition.",
-    "imageAlt": "Business colleagues collaborating around a table",
-    "connectionCaption": "Connection creates possibility",
-    "processEyebrow": "03 — FROM CONNECTION TO GROWTH",
-    "valuesEyebrow": "04 — THE WAY WE WORK",
-    "valuesHeadline": "Built on trust.",
-    "valuesSubheadline": "Focused on what’s next."
+    "regionalAmbition": "Saudi roots with regional and global ambition.",
+    "imageAlt": "High-level strategic corporate meeting in a modern Jeddah executive tower",
+    "connectionCaption": "Strategic connections unlock new commercial horizons",
+    "processEyebrow": "03 — OUR OPPORTUNITY METHODOLOGY",
+    "valuesEyebrow": "04 — CORPORATE CULTURE & VALUES",
+    "valuesHeadline": "Built on trust and credibility.",
+    "valuesSubheadline": "Focused on real impact and sustainable outcomes.",
+    "orbitBadgeTitle": "Strategic Orbit",
+    "orbitBadgeDesc": "Connections ➔ Opportunities ➔ Partnerships ➔ Growth"
   },
   "about": {
     "eyebrow": "ABOUT CREATIVE ORBIT",
-    "title": "A business partner built around possibility.",
-    "lead": "Creative Orbit is a Saudi company based in Jeddah, bringing marketing, business development, opportunity creation, and strategic partnerships into one connected perspective.",
-    "body": "We believe real value comes from understanding an opportunity, reaching the right people, building trust, and turning a conversation into a partnership or a path to growth.",
-    "visionTitle": "Our vision",
-    "vision": "To become an influential business platform and strategic partner in opportunity creation, partnerships, business development, and investment connections.",
-    "missionTitle": "Our mission",
-    "mission": "To create opportunities and strategic relationships that deliver real value through marketing, commercial, and strategic solutions.",
-    "leadershipTitle": "Leadership",
+    "title": "A strategic business partner built around possibility.",
+    "lead": "Creative Orbit is a Saudi company headquartered in Jeddah, established to build an integrated business ecosystem uniting marketing, market research, business development, opportunity creation, strategic partnerships, and investment attraction.",
+    "body": "We believe real business value does not come from isolated services or disconnected advertising campaigns, but from understanding the multi-dimensional nature of an opportunity, engaging the right counterparties, fostering mutual trust, and translating discussions into sustainable growth alliances.",
+    "visionTitle": "Our Vision",
+    "vision": "To become an influential business platform and strategic partner in opportunity creation, partnerships, business development, and investment attraction, connecting companies and projects with the right investors, clients, and partners locally and internationally.",
+    "missionTitle": "Our Mission",
+    "mission": "To create opportunities and build strategic relationships that deliver tangible value through marketing, commercial, and strategic solutions that empower companies and projects to access the right audiences, partners, investors, and markets.",
+    "objectivesTitle": "Our Strategic Objectives",
+    "leadershipTitle": "Executive Leadership",
     "leader": "Mohammed Ayedh Al-Sufyani",
-    "role": "Chief Executive Officer",
-    "bio": "Mohammed leads business development and strategic partnerships, drawing on experience in commercial relationships, negotiation, opportunity discovery, and investment opportunities.",
-    "perspectiveEyebrow": "OUR PERSPECTIVE",
-    "valuesEyebrow": "OUR VALUES",
-    "ctaTitle": "A partnership starts with understanding.",
-    "ctaLead": "Tell us about the opportunity you have in mind."
+    "role": "Chief Executive Officer | CEO",
+    "bio": "Mohammed Ayedh Al-Sufyani directs business development and strategic partnership initiatives at Creative Orbit, drawing upon extensive practical expertise in managing commercial relationships, high-level negotiation, identifying promising investment opportunities, and structuring collaborative frameworks that yield mutual value.",
+    "leaderStatement": "“True enterprise value is not generated by merely offering a service, but by the ability of strategic partners to recognize untapped opportunities and transform connections into long-term growth pathways.”",
+    "perspectiveEyebrow": "OUR PERSPECTIVE & PHILOSOPHY",
+    "valuesEyebrow": "OUR EIGHT VALUES",
+    "ctaTitle": "Lasting partnerships begin with deep mutual understanding.",
+    "ctaLead": "Reach out to discuss your company's aspirations and explore potential areas of strategic collaboration."
   },
   "servicesPage": {
-    "eyebrow": "WHAT WE DO",
-    "title": "Capabilities connected by one purpose.",
-    "lead": "A connected set of marketing and business capabilities to help organizations reach customers, partners, investors, and new markets.",
-    "cta": "Discuss this service",
-    "ctaTitle": "Let’s explore where the opportunity leads.",
-    "ctaLead": "Talk with us about a service, a partnership, or a market you are exploring."
+    "eyebrow": "OUR SERVICES & CAPABILITIES",
+    "title": "An integrated ecosystem of growth-focused capabilities.",
+    "lead": "Eight specialized service tracks spanning marketing, event management, market research, business development, strategic partnerships, and investment attraction for domestic and international enterprises.",
+    "cta": "Discuss This Service",
+    "ctaTitle": "Let’s explore collaborative horizons for your next initiative.",
+    "ctaLead": "Select a specific capability or get in touch to structure a customized strategic engagement tailored to your organization.",
+    "allTabs": "All Services",
+    "filterMarketing": "Marketing & Events",
+    "filterGrowth": "Business Development & Partnerships",
+    "filterInvestment": "Investment & Expansion"
   },
   "opportunities": {
-    "eyebrow": "OPPORTUNITIES & PARTNERSHIPS",
-    "title": "The right connection can change what comes next.",
-    "lead": "We help explore commercial and investment opportunities, connect relevant parties, and develop relationships that may lead to collaboration.",
-    "processTitle": "A thoughtful way to move forward",
-    "ctaTitle": "Have an opportunity in mind?",
-    "ctaLead": "Start a conversation with our team.",
+    "eyebrow": "OPPORTUNITIES & STRATEGIC ALLIANCES",
+    "title": "The right connection changes what comes next.",
+    "lead": "We help companies, commercial projects, and investors discover untapped opportunities, connect with suitable counterparties, and develop joint initiatives that unlock new expansion avenues.",
+    "processTitle": "Our Strategic Process",
+    "processDesc": "A disciplined, step-by-step approach rooted in analytical insight, relationship cultivation, and shared value creation.",
+    "ctaTitle": "Have a business opportunity or seeking a strategic partner?",
+    "ctaLead": "Initiate a direct conversation with our executive team to explore mutual alignment and alliance avenues.",
     "approachEyebrow": "OUR APPROACH",
-    "disclaimerEyebrow": "A CONVERSATION, NOT A PROMISE",
-    "disclaimerTitle": "Every opportunity is different.",
-    "disclaimerBody": "We begin by understanding the goals and the people involved. Any collaboration depends on fit, due diligence, and agreement by the parties. Creative Orbit does not operate a public investment marketplace or guarantee investment outcomes."
+    "disclaimerEyebrow": "TRANSPARENT & TRUSTED FRAMEWORK",
+    "disclaimerTitle": "A responsible, exploratory dialogue based on thorough alignment",
+    "disclaimerBody": "Creative Orbit initiates every discussion by understanding the specific objectives of the parties involved. Any prospective collaboration is subject to suitability review, due diligence, and mutual agreement. Creative Orbit does not operate a public investment marketplace and does not offer guaranteed investment returns or regulated financial advice."
   },
   "experience": {
     "eyebrow": "EXPERIENCE & PROJECTS",
-    "title": "A new company, grounded in practical experience.",
-    "lead": "Creative Orbit is in its launch phase. The company builds on leadership experience in business development, strategic partnerships, opportunity creation, and commercial initiatives.",
-    "noteTitle": "Our work is just beginning",
-    "note": "Projects, case studies, recommendations, awards, and certificates will be added as they become available and are verified.",
-    "verifiedNote": "We will share verified project information as Creative Orbit’s work develops.",
+    "title": "An ambitious company in its launch phase, founded on proven executive expertise.",
+    "lead": "Creative Orbit launches with rich leadership experience in business development, opportunity creation, strategic partnerships, and commercial initiatives across key sectors in Saudi Arabia.",
+    "noteTitle": "Launch Phase & Milestone Documentation",
+    "note": "Verified project case studies, client testimonials, awards, and formal certifications will be documented and published transparently as projects conclude.",
+    "verifiedNote": "At Creative Orbit, we adhere to absolute transparency and integrity; we do not present simulated case studies or unverified statistics, focusing instead on delivering verified value.",
+    "focusAreasTitle": "Current Strategic Tracks in the Market",
+    "roadmapTitle": "Future Case Studies Roadmap",
     "ctaTitle": "The next chapter starts with a conversation.",
-    "ctaLead": "Tell us what you would like to create together."
+    "ctaLead": "Connect with our team to explore how your organization can participate in Creative Orbit’s growing ecosystem."
+  },
+  "partners": {
+    "eyebrow": "PARTNER ECOSYSTEM",
+    "title": "Strategic alliances built on trust and shared value.",
+    "lead": "We value collaboration with prominent institutions and companies in information technology, safety solutions, manufacturing, contracting, and engineering consulting to create enduring mutual value.",
+    "note": "Partner names are presented as officially listed in the company profile. Official logos and verified case studies will be displayed upon formal sign-off.",
+    "ctaTitle": "Interested in joining the Creative Orbit partner network?",
+    "ctaLead": "We welcome exploring strategic alliances, collaborative ventures, and synergy opportunities that foster long-term growth.",
+    "explorePartnership": "Explore a Partnership"
   },
   "contact": {
     "eyebrow": "START A CONVERSATION",
-    "title": "Tell us what you are looking to build.",
-    "lead": "Discuss a marketing need, a business opportunity, a partnership, or a new market you are exploring.",
-    "formTitle": "Prepare an inquiry",
-    "name": "Full name",
-    "company": "Company (optional)",
-    "email": "Email (optional)",
-    "service": "Area of interest",
-    "message": "Tell us a little about your inquiry",
+    "title": "Let’s begin a conversation that creates your next opportunity.",
+    "lead": "Discuss a marketing objective, a commercial expansion opportunity, or strategic partnership options for your enterprise.",
+    "formTitle": "Inquiry & Opportunity Discussion Form",
+    "formDesc": "Enter your details below to prepare a structured message that you can review and dispatch via WhatsApp or email.",
+    "name": "Full Name",
+    "namePlaceholder": "Your full name",
+    "company": "Company / Entity (Optional)",
+    "companyPlaceholder": "e.g. National Development Co.",
+    "email": "Email Address (Optional)",
+    "emailPlaceholder": "name@example.com",
+    "phone": "Phone / Mobile Number (Optional)",
+    "phonePlaceholder": "+966 5x xxx xxxx",
+    "service": "Area of Interest or Service Track",
+    "message": "Inquiry Details or Opportunity Summary",
+    "messagePlaceholder": "Briefly describe your project, objectives, or the opportunity you wish to explore...",
+    "consent": "I agree to the privacy policy and consent to the use of my details for this inquiry.",
     "required": "This field is required.",
-    "choose": "Choose an area",
+    "choose": "Select an area of interest",
     "submit": "Continue on WhatsApp",
-    "privacy": "By continuing, you will open WhatsApp with a draft message. You can review and send it there.",
-    "success": "Your WhatsApp draft is ready. Review it and send it in WhatsApp.",
-    "phoneLabel": "Phone & WhatsApp",
-    "placeholder": "Select a service",
+    "emailDraftAction": "Prepare Email Draft",
+    "privacy": "Note: This button opens a formatted message in WhatsApp for your review and manual sending.",
+    "emailDisclaimer": "Notice: This prepares an email draft in your local mail client. Official company email is pending launch confirmation.",
+    "success": "Your WhatsApp draft is ready! Review and send it directly in WhatsApp.",
+    "emailSuccess": "Your email draft is prepared! Review it in your preferred email client.",
+    "previewTitle": "Message Preview for Your Review:",
+    "phoneLabel": "Direct Phone & WhatsApp",
+    "locationLabel": "Headquarters",
+    "headquartersValue": "Jeddah, Saudi Arabia",
+    "officeHours": "Working Hours: Sunday — Thursday (9:00 AM — 5:00 PM AST)",
     "types": [
-      "General inquiry",
-      "Marketing & advertising",
-      "Event management",
-      "Market research",
-      "Business development",
-      "Strategic partnership",
-      "Investment relations",
-      "Business expansion",
-      "Real estate",
+      "General Inquiry",
+      "Advertising & Marketing",
+      "Event Management & Conferences",
+      "Market Research & Opinion Polls",
+      "Business Development & Opportunity Creation",
+      "Strategic Partnerships & Alliances",
+      "Investment Attraction & Investor Relations",
+      "Local & International Business Expansion",
+      "Real Estate Activities & Services",
       "Other"
     ]
   },
   "privacy": {
-    "eyebrow": "PRIVACY",
-    "title": "Privacy policy — draft for review",
-    "lead": "This page is a working template. It is not an approved company policy and must be completed and reviewed before publication.",
-    "note": "Company review required",
-    "body": "The final policy should explain what information Creative Orbit collects, why it is collected, how it is stored and protected, who may receive it, how long it is retained, and how visitors may exercise their privacy rights. Add the responsible contact details and any applicable legal terms before launch.",
-    "pending": "Contact details and the final policy text are pending company approval."
+    "eyebrow": "LEGAL & PRIVACY",
+    "title": "Privacy Policy — Working Draft for Review",
+    "lead": "This page represents a procedural working draft under legal review by Creative Orbit Marketing Co. management prior to formal public launch.",
+    "note": "Company Review Required Prior to Launch",
+    "body": "Creative Orbit Marketing Co. is committed to protecting the privacy of visitors, partners, and clients. This draft outlines our guiding principles regarding data handling, communications, and confidentiality under the applicable regulations of the Kingdom of Saudi Arabia.",
+    "pending": "The finalized and certified privacy policy, including dedicated Data Protection Officer contact details, will be published upon launch sign-off.",
+    "sections": [
+      {
+        "title": "1. Data We Collect",
+        "text": "Information collected is strictly limited to data voluntarily submitted through our inquiry forms (such as name, company name, phone number, and email address)."
+      },
+      {
+        "title": "2. Purpose of Processing",
+        "text": "Data submitted is used solely to respond to inquiries, discuss partnership opportunities, and schedule introductory business meetings."
+      },
+      {
+        "title": "3. WhatsApp & Messaging Channels",
+        "text": "When continuing via WhatsApp, users are directed through a secure web link prepopulated with their draft text. No automated messages are dispatched without direct user consent and action."
+      },
+      {
+        "title": "4. Security & Confidentiality",
+        "text": "We enforce appropriate administrative and technical safeguards to protect business inquiries and prevent unauthorized disclosure."
+      }
+    ]
   },
   "services": {
     "items": [
       {
+        "id": "marketing",
+        "number": "01",
         "name": "Advertising & Marketing",
-        "description": "Marketing and advertising solutions that build a stronger presence, reach target audiences, and reinforce brand value."
+        "category": "marketing",
+        "tagline": "Impactful presence and resonant identity",
+        "description": "Comprehensive marketing and advertising solutions that empower organizations to build an impactful market presence, engage target audiences directly, and enhance overall brand equity.",
+        "challenges": "Lack of market differentiation, low brand engagement, or the need to launch an enterprise brand with authoritative coherence.",
+        "objectives": "Drive brand awareness, execute targeted commercial campaigns, and develop high-converting content strategies that reinforce revenue growth."
       },
       {
+        "id": "events",
+        "number": "02",
         "name": "Event Management",
-        "description": "Planning and organizing events and conferences that strengthen brand presence and create opportunities to connect."
+        "category": "marketing",
+        "tagline": "Strategic platforms for executive networking",
+        "description": "End-to-end planning and curation of corporate events, conferences, and executive forums that elevate brand presence and facilitate high-level deal-making.",
+        "challenges": "Complex event logistics, underperforming event ROI, or lack of curated environments to host high-value partners and investors.",
+        "objectives": "Execute corporate assemblies, convene key industry stakeholders, and generate qualified partnership opportunities aligned with strategic goals."
       },
       {
+        "id": "research",
+        "number": "03",
         "name": "Market Research & Opinion Polls",
-        "description": "Collecting and analyzing information about markets, customers, and opinions to support better-informed decisions."
+        "category": "growth",
+        "tagline": "Data-driven commercial decisions",
+        "description": "Rigorous collection and analysis of market intelligence, consumer behavior, and sentiment to empower business leaders to make informed commercial choices.",
+        "challenges": "Market ambiguity, insufficient granular data on Saudi consumer preferences, and the financial risk of unvalidated expansions.",
+        "objectives": "Deliver analytical reports and survey benchmarks supporting product rollouts, market entry evaluation, and competitive positioning."
       },
       {
+        "id": "development",
+        "number": "04",
         "name": "Business Development & Opportunity Creation",
-        "description": "Discovering and developing commercial and investment opportunities and opening new paths for growth."
+        "category": "growth",
+        "tagline": "Unlocking sustainable revenue pathways",
+        "description": "Discovering and structuring latent commercial and investment opportunities, opening non-traditional avenues for sustained growth and multi-sector expansion.",
+        "challenges": "Stagnating organic growth, difficulty entering new sectors, or having a promising concept without the network needed to operationalize it.",
+        "objectives": "Map untapped potential, evaluate commercial viability, and structure actionable partnership avenues that ensure sustainable inflows."
       },
       {
+        "id": "alliances",
+        "number": "05",
         "name": "Strategic Partnerships & Alliances",
-        "description": "Developing partnerships among companies, projects, investors, and relevant organizations to create shared value."
+        "category": "growth",
+        "tagline": "Creating enduring mutual enterprise value",
+        "description": "Structuring and nurturing robust alliances between corporations, project founders, investors, and key entities to build shared value supporting long-term goals.",
+        "challenges": "Operational silos, asymmetric negotiation terms, and the absence of strategic allies to accelerate market penetration.",
+        "objectives": "Align counterparty interests, architect partnership frameworks, and steward negotiations through to formal collaboration agreements."
       },
       {
+        "id": "investor-relations",
+        "number": "06",
         "name": "Investment Attraction & Investor Relations",
-        "description": "Developing channels to reach investors and connect projects with potential investors and partners."
+        "category": "investment",
+        "tagline": "Connecting opportunities with aligned capital",
+        "description": "Developing professional channels to engage serious investors, presenting commercial projects with institutional rigor and clarity.",
+        "challenges": "Difficulty articulating the value proposition to institutional investors, or seeking a trusted partner with verified access to capital networks.",
+        "objectives": "Prepare institutional opportunity dossiers, coordinate with financing partners, and foster strategic alignment between capital and venture."
       },
       {
+        "id": "expansion",
+        "number": "07",
         "name": "Local & International Business Expansion",
-        "description": "Exploring new markets and building relationships and partnerships that support expansion."
+        "category": "investment",
+        "tagline": "Expanding from Saudi Arabia to regional horizons",
+        "description": "Exploring high-potential markets and establishing cross-border partnerships that support expansion across Saudi regions, the GCC, and beyond.",
+        "challenges": "Barriers to market entry, unfamiliar regulatory and commercial nuances, and the difficulty of identifying trustworthy regional partners.",
+        "objectives": "Facilitate smooth market entry, connect entities with vetted local operators, and establish an agile regional expansion footprint."
       },
       {
-        "name": "Real Estate Activities",
-        "description": "Real estate activities on a fee or contract basis, within the company's registered scope."
+        "id": "real-estate",
+        "number": "08",
+        "name": "Real Estate Activities & Services",
+        "category": "growth",
+        "tagline": "Specialized contractual real estate services",
+        "description": "Delivering specialized real estate activities within the company’s licensed scope on a contractual or fee basis.",
+        "challenges": "The need for a strategic partner to link property opportunities with investors or structure commercial marketing and operating models.",
+        "objectives": "Provide professional contractual facilitation, connecting developers and commercial properties with qualified partners and buyers."
       }
     ]
   },
   "values": {
     "items": [
-      "Trust",
-      "Partnership",
-      "Opportunity creation",
-      "Innovation",
-      "Results",
-      "Professionalism",
-      "Ambition",
-      "Sustainability"
+      {
+        "name": "Trust",
+        "desc": "We build all relationships upon integrity, transparency, and uncompromising commitment."
+      },
+      {
+        "name": "Partnership",
+        "desc": "We seek mutual interests and cultivate enduring, multi-year alliances."
+      },
+      {
+        "name": "Opportunity Creation",
+        "desc": "We perceive latent possibilities where others see obstacles and market friction."
+      },
+      {
+        "name": "Innovation",
+        "desc": "We engineer novel approaches to generate value and competitive differentiation."
+      },
+      {
+        "name": "Results",
+        "desc": "We maintain an unwavering focus on real, measurable outcomes for our partners."
+      },
+      {
+        "name": "Professionalism",
+        "desc": "We adhere to the highest benchmarks of quality in negotiation, conduct, and execution."
+      },
+      {
+        "name": "Ambition",
+        "desc": "We launch with confidence from Saudi Arabia while thinking with a global perspective."
+      },
+      {
+        "name": "Sustainability",
+        "desc": "We build long-term enterprise value that evolves resiliently with market shifts."
+      }
     ]
   },
   "steps": {
     "items": [
-      "Understand the objective",
-      "Explore relevant opportunities",
-      "Connect the right parties",
-      "Develop the partnership",
-      "Explore the path to growth"
+      {
+        "number": "01",
+        "title": "Understand the Objective",
+        "desc": "We listen deeply to grasp the strategic vision, commercial requirements, and core capabilities of our partner."
+      },
+      {
+        "number": "02",
+        "title": "Explore Relevant Opportunities",
+        "desc": "We survey market dynamics and evaluate available commercial avenues to pinpoint the most viable trajectory."
+      },
+      {
+        "number": "03",
+        "title": "Connect the Right Parties",
+        "desc": "We leverage our business network to build direct bridges between companies, projects, investors, and strategic allies."
+      },
+      {
+        "number": "04",
+        "title": "Develop the Partnership",
+        "desc": "We steward commercial dialogue and positive negotiation to formulate a balanced, win-win collaboration model."
+      },
+      {
+        "number": "05",
+        "title": "Explore the Path to Growth",
+        "desc": "We facilitate execution and explore secondary expansion milestones to ensure sustained collective momentum."
+      }
+    ]
+  },
+  "strategicObjectives": {
+    "items": [
+      "Establish a prominent and trusted Saudi brand reflecting excellence and strategic capability.",
+      "Identify and develop high-potential commercial and investment opportunities across diversified sectors.",
+      "Build an expansive network of enduring, multi-year strategic partnerships and alliances.",
+      "Attract qualified investors and connect them with closely aligned ventures and opportunities.",
+      "Expand the client and partner ecosystem across Saudi Arabia and the wider region.",
+      "Develop innovative marketing and commercial solutions that respond to modern business demands.",
+      "Construct a multi-track local, regional, and international business network.",
+      "Empower companies and projects to effectively penetrate new markets and demographics.",
+      "Methodically expand from the domestic Saudi market into GCC and international territories.",
+      "Transform relationships and opportunities into ventures yielding sustainable economic value."
     ]
   },
   "partnersList": {
     "items": [
-      "Sadeem For IT",
-      "Weqayati Al Tijariya Co.",
-      "Kayan Mattress Co.",
-      "Eamar Altanmia for construction",
-      "شركة كفاء الهندسية"
+      {
+        "name": "Sadeem For IT",
+        "sector": "Information Technology & Digital Solutions",
+        "tag": "Technology & IT"
+      },
+      {
+        "name": "Weqayati Al Tijariya Co.",
+        "sector": "Commercial & Safety Solutions",
+        "tag": "Commercial & Safety Solutions"
+      },
+      {
+        "name": "Kayan Mattress Co.",
+        "sector": "Manufacturing & Consumer Products",
+        "tag": "Manufacturing & Consumer Products"
+      },
+      {
+        "name": "Eamar Altanmia for construction",
+        "sector": "Construction, Contracting & Infrastructure",
+        "tag": "Construction & Contracting"
+      },
+      {
+        "name": "شركة كفاء الهندسية",
+        "sector": "Engineering Consultancy & Advisory",
+        "tag": "Engineering Consultancy"
+      }
     ]
   },
-  "partners": {
-    "eyebrow": "OUR PARTNER ECOSYSTEM",
-    "title": "Growth is built together.",
-    "lead": "We value the relationships and collaboration that connect companies, projects, and people around shared opportunity.",
-    "note": "Names are presented as provided in the company profile. Logos and specific relationship details will be added when verified.",
-    "ctaTitle": "Let’s explore a partnership.",
-    "ctaLead": "Tell us about the kind of collaboration you are looking for."
+  "experienceAreas": {
+    "items": [
+      {
+        "number": "01",
+        "title": "Client Base Acquisition & Expansion",
+        "desc": "Structuring outreach strategies and cultivating enduring relationships with enterprise accounts in Saudi Arabia."
+      },
+      {
+        "number": "02",
+        "title": "Strategic Alliances Network",
+        "desc": "Curating an integrated partner network spanning IT, engineering, construction, and commercial solutions."
+      },
+      {
+        "number": "03",
+        "title": "Commercial & Investment Opportunities",
+        "desc": "Identifying latent investment potential and developing compelling, data-backed value propositions."
+      },
+      {
+        "number": "04",
+        "title": "Investor & Partner Cultivation",
+        "desc": "Building direct communication channels with institutional capital and growth partners."
+      },
+      {
+        "number": "05",
+        "title": "Service Activation in the Saudi Market",
+        "desc": "Tailoring service delivery to the high-velocity economic momentum of Saudi Vision 2030."
+      },
+      {
+        "number": "06",
+        "title": "Regional & International Expansion Foundation",
+        "desc": "Fostering cross-border relationships extending across the GCC and international markets."
+      }
+    ]
   }
 }
