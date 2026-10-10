@@ -35,20 +35,20 @@ export default async function SiteFooter() {
       <div className="wrap footer-top">
         {/* Brand Column */}
         <div className="footer-brand">
-          <Link href="/" className="brand footer-brand-link" aria-label="Creative Orbit Marketing Co.">
-            <span className="footer-logo-badge">
+          <Link href="/" className="brand footer-brand-link" aria-label={ar ? 'شركة كرييتيف أوربيت' : 'Creative Orbit Marketing Co.'}>
+            <div className="footer-logo-badge">
               <Image
-                src="/favicon.png"
-                width={50}
-                height={30}
-                alt="Creative Orbit"
+                src="/logo.png"
+                width={150}
+                height={55}
+                alt={ar ? 'شعار شركة كرييتيف أوربيت' : 'Creative Orbit Marketing Co.'}
                 className="footer-logo-img"
               />
-            </span>
-            <span className="brand-wordmark">
-              <strong className="brand-title footer-title">Creative Orbit</strong>
+            </div>
+            <span className="brand-wordmark footer-brand-wordmark">
+              <strong className="brand-title footer-title">{ar ? 'كرييتيف أوربيت' : 'Creative Orbit'}</strong>
               <small className="brand-subtitle footer-subtitle">
-                {ar ? 'شركة كرييتيف أوربيت ماركتينج' : 'MARKETING CO.'}
+                {ar ? 'للتسويق وتطوير الأعمال' : 'MARKETING CO.'}
               </small>
             </span>
           </Link>
@@ -67,6 +67,31 @@ export default async function SiteFooter() {
                 ? 'شركة سعودية ذات مسؤولية محدودة تعمل في مجالات التسويق وتطوير الأعمال وبناء التحالفات.'
                 : 'A Saudi limited liability company operating in marketing, business development, and strategic partnerships.'}
             </p>
+          </div>
+
+          {/* Saudi Vision 2030 context */}
+          <div className="footer-vision-block">
+            <div className="vision-badge-card">
+              <div className="vision-img-frame">
+                <Image
+                  src="/vision-transparent.png"
+                  width={80}
+                  height={50}
+                  alt={ar ? 'رؤية السعودية 2030' : 'Saudi Vision 2030'}
+                  className="vision-logo-img"
+                />
+              </div>
+              <div className="vision-badge-text">
+                <span className="vision-badge-title">
+                  {ar ? 'رؤية السعودية ٢٠٣٠' : 'Saudi Vision 2030'}
+                </span>
+                <p className="vision-badge-desc">
+                  {ar
+                    ? 'نركز على التسويق وتطوير الأعمال وبناء الشراكات في المملكة العربية السعودية.'
+                    : 'Our work focuses on marketing, business development, and partnerships in Saudi Arabia.'}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -102,7 +127,7 @@ export default async function SiteFooter() {
         <div className="footer-links-col footer-contact-col">
           <p className="footer-col-title">{ar ? 'قنوات التواصل' : 'CONNECT'}</p>
           <div className="footer-contact-actions">
-            <a href={CONTACT_PHONE_HREF} className="footer-contact-card" aria-label="Call Creative Orbit">
+            <a href={CONTACT_PHONE_HREF} className="footer-contact-card" aria-label={ar ? 'الاتصال بكرييتيف أوربيت' : 'Call Creative Orbit'}>
               <Phone size={16} />
               <div>
                 <span className="contact-card-label">{ar ? 'الاتصال الهاتفي' : 'Phone'}</span>
@@ -116,7 +141,7 @@ export default async function SiteFooter() {
               target="_blank"
               rel="noreferrer"
               className="footer-contact-card is-whatsapp"
-              aria-label="WhatsApp Creative Orbit"
+              aria-label={ar ? 'واتساب كرييتيف أوربيت' : 'WhatsApp Creative Orbit'}
             >
               <MessageSquare size={16} />
               <div>
@@ -134,19 +159,30 @@ export default async function SiteFooter() {
         </div>
       </div>
 
-      {/* Footer Bottom Bar */}
+      {/* Footer Bottom Bar with Developer Attribution & Links */}
       <div className="wrap footer-bottom">
         <div className="bottom-left">
-          <span>© {new Date().getFullYear()} Creative Orbit Marketing Co.</span>
+          <span>© {new Date().getFullYear()} {ar ? 'شركة كرييتيف أوربيت للتسويق' : 'Creative Orbit Marketing Co.'}</span>
           <span className="bottom-divider">·</span>
           <span>{ar ? 'جميع الحقوق محفوظة' : 'All Rights Reserved'}</span>
         </div>
 
+        <div className="bottom-center">
+          <span className="developer-credit">
+            {ar ? 'تصميم وتطوير ' : 'Designed & Developed by '}
+            <a
+              href="https://shimaamohamed.bio.link/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="developer-credit-link"
+              title={ar ? 'زيارة صفحة محمود علي' : 'Visit Mahmoud Ali profile'}
+            >
+              {ar ? 'محمود علي' : 'Mahmoud Ali'}
+            </a>
+          </span>
+        </div>
+
         <div className="bottom-right">
-          <Link href="/privacy" className="privacy-link">
-            {ar ? 'سياسة الخصوصية (مسودة للمراجعة)' : 'Privacy Policy (Draft for review)'}
-          </Link>
-          <span className="bottom-divider">·</span>
           <span>{ar ? 'جدة · المملكة العربية السعودية' : 'Jeddah · KSA'}</span>
         </div>
       </div>

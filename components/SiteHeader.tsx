@@ -48,21 +48,21 @@ export default function SiteHeader() {
       <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="wrap nav-wrap">
           {/* Brand Link with Transparent Official Emblem */}
-          <Link href="/" className="brand" aria-label="Creative Orbit Marketing Co.">
+          <Link href="/" className="brand" aria-label={ar ? 'شركة كرييتيف أوربيت' : 'Creative Orbit Marketing Co.'}>
             <span className="brand-logo-container">
               <Image
                 src="/favicon.png"
                 width={50}
                 height={30}
-                alt="Creative Orbit"
+                alt={ar ? 'شعار كرييتيف أوربيت' : 'Creative Orbit'}
                 className="brand-logo-img"
                 priority
               />
             </span>
             <span className="brand-wordmark">
-              <strong className="brand-title">Creative Orbit</strong>
+              <strong className="brand-title">{ar ? 'كرييتيف أوربيت' : 'Creative Orbit'}</strong>
               <small className="brand-subtitle">
-                {ar ? 'شركة كرييتيف أوربيت ماركتينج' : 'MARKETING CO.'}
+                {ar ? 'للتسويق وتطوير الأعمال' : 'MARKETING CO.'}
               </small>
             </span>
           </Link>
@@ -92,7 +92,7 @@ export default function SiteHeader() {
                 aria-label={ar ? 'Switch to English' : 'التبديل إلى العربية'}
               >
                 <Globe size={16} />
-                <span>{ar ? 'English (EN)' : 'العربية (AR)'}</span>
+                <span>{ar ? 'الانتقال إلى الإنجليزية' : 'التبديل إلى العربية'}</span>
               </button>
               <Link className="button button-red mobile-contact-btn" href="/contact" onClick={() => setOpen(false)}>
                 <span>{ar ? 'ناقش فرصتك معنا' : 'Discuss an Opportunity'}</span>
@@ -111,7 +111,7 @@ export default function SiteHeader() {
               title={ar ? 'Switch to English' : 'التبديل إلى العربية'}
             >
               <Globe size={14} className="globe-icon" />
-              <span className="lang-code">{ar ? 'EN' : 'عربي'}</span>
+              <span className="lang-code">{ar ? 'الإنجليزية' : 'عربي'}</span>
             </button>
 
             <Link className="nav-cta button button-red" href="/contact">

@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react';
 import {useTranslations} from 'next-intl';
 import {CONTACT_WHATSAPP_HREF} from '@/lib/contact';
-import {MessageSquare, Mail, CheckCircle2, AlertCircle, ArrowUpRight, Copy, Check} from 'lucide-react';
+import {MessageSquare, CheckCircle2, AlertCircle, ArrowUpRight, Copy, Check} from 'lucide-react';
 
 interface ContactFormProps {
   initialService?: string;
@@ -28,7 +28,7 @@ export default function ContactForm({initialService = '', formId = 'contact-inqu
     }
   }, [initialService]);
 
-  const [feedback, setFeedback] = useState<{type: 'idle' | 'success' | 'email-success' | 'error'; message: string}>({
+  const [feedback, setFeedback] = useState<{type: 'idle' | 'success' | 'error'; message: string}>({
     type: 'idle',
     message: '',
   });
@@ -52,7 +52,7 @@ export default function ContactForm({initialService = '', formId = 'contact-inqu
     const {name, company, email, phone, service, message} = formData;
     if (isArabic) {
       const parts = [
-        `مرحبًا فريق Creative Orbit،`,
+        `مرحبًا فريق كرييتيف أوربيت،`,
         `أنا: ${name || '[الاسم]'}`,
         company ? `اسم الشركة / الجهة: ${company}` : '',
         service ? `المجال / الخدمة محل الاهتمام: ${service}` : '',
@@ -107,28 +107,6 @@ export default function ContactForm({initialService = '', formId = 'contact-inqu
     });
 
     window.open(waUrl, '_blank', 'noopener,noreferrer');
-  }
-
-  function handleEmailDraft(e: React.MouseEvent) {
-    e.preventDefault();
-    if (!validate()) return;
-
-    const isArabic = document.documentElement.lang === 'ar' || document.documentElement.dir === 'rtl';
-    const text = constructMessage(isArabic);
-    const subject = isArabic
-      ? `استفسار جديد - Creative Orbit: ${formData.service || formData.name}`
-      : `New Inquiry - Creative Orbit: ${formData.service || formData.name}`;
-
-    // Configurable email address placeholder with honest disclaimer
-    const fallbackMail = 'contact@creativeorbit.sa';
-    const mailtoUrl = `mailto:${fallbackMail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
-
-    setFeedback({
-      type: 'email-success',
-      message: t('emailSuccess') + ' ' + t('emailDisclaimer'),
-    });
-
-    window.location.href = mailtoUrl;
   }
 
   function handleCopyPreview() {
@@ -311,14 +289,6 @@ export default function ContactForm({initialService = '', formId = 'contact-inqu
             <ArrowUpRight size={16} />
           </button>
 
-          <button
-            type="button"
-            onClick={handleEmailDraft}
-            className="button button-outline-dark email-btn"
-          >
-            <Mail size={16} />
-            <span>{t('emailDraftAction')}</span>
-          </button>
         </div>
 
         <p className="form-bottom-disclaimer">

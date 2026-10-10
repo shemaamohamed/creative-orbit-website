@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {getTranslations} from 'next-intl/server';
+import {getLocale, getTranslations} from 'next-intl/server';
 import {Link} from '@/lib/navigation';
 import {
   ArrowUpRight,
@@ -34,7 +34,17 @@ export function OrbitMark({className = ''}: {className?: string}) {
 }
 
 // Reusable High-Impact CTA Band
-export async function CtaBand({title, lead}: {title: string; lead: string}) {
+export async function CtaBand({
+  title,
+  lead,
+  secondaryHref,
+  secondaryLabel,
+}: {
+  title: string;
+  lead: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}) {
   const s = await getTranslations('shared');
   return (
     <section className="cta-band">
@@ -55,6 +65,11 @@ export async function CtaBand({title, lead}: {title: string; lead: string}) {
             <span>{s('discuss')}</span>
             <ArrowUpRight size={17} />
           </Link>
+          {secondaryHref && secondaryLabel && (
+            <Link className="cta-secondary-link" href={secondaryHref}>
+              {secondaryLabel}
+            </Link>
+          )}
         </div>
       </div>
     </section>
@@ -67,20 +82,32 @@ export async function PageIntro({
   title,
   lead,
   index,
+  showBreadcrumb = false,
 }: {
   eyebrow: string;
   title: string;
   lead: string;
   index: string;
+  showBreadcrumb?: boolean;
 }) {
+  const locale = await getLocale();
+  const navigation = await getTranslations('navigation');
   return (
     <section className="page-intro">
       <div className="wrap page-intro-inner">
-        <p className="eyebrow intro-eyebrow">
-          <span className="index-tag">{index} / 07</span>
-          <span className="eyebrow-dot" />
-          {eyebrow}
-        </p>
+        {showBreadcrumb ? (
+          <nav className="page-breadcrumb" aria-label={locale === 'ar' ? 'مسار التنقل' : 'Breadcrumb'}>
+            <Link href="/">{navigation!('home')}</Link>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">{eyebrow}</span>
+          </nav>
+        ) : (
+          <p className="eyebrow intro-eyebrow">
+            <span className="index-tag">{index} / 07</span>
+            <span className="eyebrow-dot" />
+            {eyebrow}
+          </p>
+        )}
         <h1 className="page-intro-title">{title}</h1>
         <p className="page-intro-lead">{lead}</p>
 
@@ -276,7 +303,7 @@ export async function HomePage() {
                 <p className="service-desc">{item.description}</p>
                 <div className="service-card-action">
                   <Link href={`/contact?service=${encodeURIComponent(item.name)}`} className="service-cta-link">
-                    <span>{s('discuss')}</span>
+                    <span>{s('askAboutService')}</span>
                     <ArrowUpRight size={15} />
                   </Link>
                 </div>
@@ -286,7 +313,7 @@ export async function HomePage() {
 
           <div className="section-footer-link">
             <Link className="button button-outline-dark" href="/services">
-              <span>{s('all')} (8 {s('services')})</span>
+              <span>{s('allServices')}</span>
               <ArrowUpRight size={17} />
             </Link>
           </div>
@@ -308,7 +335,7 @@ export async function HomePage() {
                 : 'We believe every transformative opportunity follows a structured trajectory, starting from active listening to structuring sustainable alliances.'}
             </p>
             <Link className="button button-outline-light" href="/opportunities">
-              <span>{s('learn')}</span>
+              <span>{t('viewMethod')}</span>
               <ArrowUpRight size={16} />
             </Link>
           </div>
@@ -344,7 +371,7 @@ export async function HomePage() {
               </h2>
             </div>
             <Link className="button button-outline-dark" href="/about">
-              <span>{s('learn')}</span>
+              <span>{t('aboutLink')}</span>
               <ArrowUpRight size={16} />
             </Link>
           </div>
@@ -380,7 +407,7 @@ export async function HomePage() {
               </h2>
             </div>
             <Link className="button button-outline-dark" href="/partners">
-              <span>{s('learn')}</span>
+              <span>{t('partnersLink')}</span>
               <ArrowUpRight size={16} />
             </Link>
           </div>
@@ -427,14 +454,13 @@ export async function StandardPage({slug}: {slug: string}) {
   // ABOUT US PAGE
   if (slug === 'about') {
     const t = await getTranslations('about');
-    const values = await getTranslations('values');
-    const objectives = await getTranslations('strategicObjectives');
-    const rawValues = values.raw('items') as Array<{name: string; desc: string}>;
-    const rawObjectives = objectives.raw('items') as string[];
+    const locale = await getLocale();
+    const rawObjectives = t.raw('priorities') as string[];
+    const aboutValues = t.raw('values') as Array<{name: string; desc: string}>;
 
     return (
       <>
-        <PageIntro eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} index="02" />
+        <PageIntro eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} index="02" showBreadcrumb />
 
         {/* Narrative & Architecture Photo */}
         <section className="section-pad">
@@ -447,7 +473,7 @@ export async function StandardPage({slug}: {slug: string}) {
               <div className="about-media-box">
                 <Image
                   src="/images/corporate-hub.jpg"
-                  alt="Creative Orbit Corporate Headquarters"
+                  alt={locale === 'ar' ? 'مساحة أعمال حديثة في جدة' : 'Modern business space in Jeddah'}
                   width={480}
                   height={320}
                   className="about-hub-img"
@@ -481,14 +507,14 @@ export async function StandardPage({slug}: {slug: string}) {
           </div>
         </section>
 
-        {/* 10 Strategic Objectives */}
+        {/* Client-facing priorities */}
         <section className="section-pad objectives-section">
           <div className="wrap">
             <p className="eyebrow">
               <span className="eyebrow-dot" />
               {t('objectivesTitle')}
             </p>
-            <h2 className="section-sub-title">عشرة أهداف استراتيجية توجه منظومة أعمالنا</h2>
+            <h2 className="section-sub-title">{t('prioritiesHeadline')}</h2>
             <div className="objectives-list-grid">
               {rawObjectives.map((obj, i) => (
                 <div className="objective-item" key={i}>
@@ -515,7 +541,7 @@ export async function StandardPage({slug}: {slug: string}) {
                   />
                 </div>
                 <div className="leader-orbit-ring" />
-                <span className="leader-badge-title">CREATIVE ORBIT LEADERSHIP</span>
+                <span className="leader-badge-title">{t('leadershipTitle')}</span>
               </div>
             </div>
 
@@ -527,21 +553,18 @@ export async function StandardPage({slug}: {slug: string}) {
               <h2 className="leader-name">{t('leader')}</h2>
               <p className="leader-role">{t('role')}</p>
               <p className="leader-bio">{t('bio')}</p>
-              <blockquote className="leader-statement">
-                {t('leaderStatement')}
-              </blockquote>
             </div>
           </div>
         </section>
 
-        {/* All 8 Values */}
+        {/* How we work */}
         <section className="wrap section-pad">
           <p className="eyebrow">
             <span className="eyebrow-dot" />
-            {t('valuesEyebrow')}
+            {t('aboutValuesTitle')}
           </p>
           <div className="values-cards-grid">
-            {rawValues.map((v, i) => (
+            {aboutValues.map((v, i) => (
               <div className="value-card" key={v.name}>
                 <div className="value-card-top">
                   <span className="value-idx">0{i + 1}</span>
@@ -554,7 +577,7 @@ export async function StandardPage({slug}: {slug: string}) {
           </div>
         </section>
 
-        <CtaBand title={t('ctaTitle')} lead={t('ctaLead')} />
+        <CtaBand title={t('ctaTitle')} lead={t('ctaLead')} secondaryHref="/services" secondaryLabel={s('services')} />
       </>
     );
   }

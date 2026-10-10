@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 import {useLocale} from 'next-intl';
-import {ArrowUpRight, Network, Sparkles, Handshake, TrendingUp} from 'lucide-react';
+import {ArrowUpRight, Network, Target, Handshake, TrendingUp} from 'lucide-react';
 import {Link} from '@/lib/navigation';
 
 export default function StrategicOrbitVisual() {
@@ -31,7 +31,7 @@ export default function StrategicOrbitVisual() {
       desc: ar
         ? 'تحليل السوق ودراسة الفجوات لصياغة فرص تجارية واستثمارية نوعية ذات جدوى اقتصادية واضحة.'
         : 'Analyzing market dynamics and gaps to architect viable, high-potential commercial ventures.',
-      icon: Sparkles,
+      icon: Target,
       nodePos: { cx: 270, cy: 120 },
       color: '#A22725',
     },
