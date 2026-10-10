@@ -69,30 +69,26 @@ export default async function SiteFooter() {
             </p>
           </div>
 
-          {/* Saudi Vision 2030 context */}
-          <div className="footer-vision-block">
-            <div className="vision-badge-card">
-              <div className="vision-img-frame">
-                <Image
-                  src="/vision-transparent.png"
-                  width={80}
-                  height={50}
-                  alt={ar ? 'رؤية السعودية 2030' : 'Saudi Vision 2030'}
-                  className="vision-logo-img"
-                />
-              </div>
-              <div className="vision-badge-text">
-                <span className="vision-badge-title">
-                  {ar ? 'رؤية السعودية ٢٠٣٠' : 'Saudi Vision 2030'}
-                </span>
-                <p className="vision-badge-desc">
-                  {ar
-                    ? 'نركز على التسويق وتطوير الأعمال وبناء الشراكات في المملكة العربية السعودية.'
-                    : 'Our work focuses on marketing, business development, and partnerships in Saudi Arabia.'}
-                </p>
-              </div>
+          <div className="footer-vision-card">
+            <div className="footer-vision-logo-frame">
+              <Image
+                src="/vision-transparent.png"
+                width={160}
+                height={109}
+                alt={ar ? 'شعار رؤية السعودية 2030' : 'Saudi Vision 2030 logo'}
+                className="footer-vision-logo"
+              />
+            </div>
+            <div className="footer-vision-copy">
+              <strong>{ar ? 'رؤية السعودية 2030' : 'Saudi Vision 2030'}</strong>
+              <p>
+                {ar
+                  ? 'شركة سعودية تعمل في التسويق وتطوير الأعمال وبناء الشراكات، وهي مجالات تتقاطع مع أولويات النمو الوطني.'
+                  : 'A Saudi company working in marketing, business development, and partnerships—areas connected to national growth priorities.'}
+              </p>
             </div>
           </div>
+
         </div>
 
         {/* Quick Links */}

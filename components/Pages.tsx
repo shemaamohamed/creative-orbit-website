@@ -138,14 +138,29 @@ export async function HomePage() {
     name: string;
     tagline: string;
     description: string;
+    deliverable?: string;
   }>;
-  const rawValues = values.raw('items') as Array<{name: string; desc: string}>;
+  const rawValues = values.raw('items') as Array<{
+    name: string;
+    desc: string;
+    behavior?: string;
+  }>;
   const rawSteps = steps.raw('items') as Array<{number: string; title: string; desc: string}>;
-  const partners = partnersList.raw('items') as Array<{name: string; sector: string; tag: string}>;
+  const partners = partnersList.raw('items') as Array<{
+    name: string;
+    sector: string;
+    tag: string;
+    collaboration?: string;
+  }>;
+  const proofItems = t.raw('proofItems') as Array<{
+    num: string;
+    label: string;
+    desc: string;
+  }>;
 
   return (
     <>
-      {/* 1. Hero Section */}
+      {/* 1. Hero Section: Who you help, what you do, one primary action */}
       <section className="hero">
         <div className="wrap hero-grid">
           <div className="hero-copy">
@@ -164,7 +179,7 @@ export async function HomePage() {
                 <ArrowUpRight size={18} />
               </Link>
               <Link href="/services" className="hero-secondary-link">
-                <span>{s('explore')}</span>
+                <span>{s('allServices')}</span>
                 <ArrowUpRight size={16} />
               </Link>
             </div>
@@ -233,54 +248,43 @@ export async function HomePage() {
         </div>
       </section>
 
-      {/* 2. Editorial Statement: From Connection to Opportunity */}
-      <section className="intro-section section-pad">
-        <div className="wrap intro-grid">
-          <div className="intro-aside">
-            <p className="eyebrow">
-              <span className="eyebrow-dot" />
-              01 — {t('introTitle')}
-            </p>
-            <div className="intro-stat-box">
-              <span className="stat-number">CO</span>
-              <p className="stat-label">
-                {t('localContext') === 'جدة، المملكة العربية السعودية'
-                  ? 'منظومة أعمال سعودية متكاملة'
-                  : 'Integrated Saudi Business Platform'}
-              </p>
-            </div>
-          </div>
-
-          <div className="intro-main">
-            <h2 className="intro-heading">{t('introTitle')}</h2>
-            <p className="intro-body-large">{t('intro')}</p>
-
-            <div className="intro-orbit-divider">
-              <span className="divider-line" />
-              <span className="divider-node node-navy" />
-              <span className="divider-node node-red" />
-              <span className="divider-node node-navy" />
-              <span className="divider-line" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Interactive Strategic Orbit Component */}
-      <section className="orbit-interactive-section section-pad">
+      {/* 2. Proof Section: Project outcomes, credible metrics, launch-phase verified facts */}
+      <section className="proof-section section-pad">
         <div className="wrap">
-          <StrategicOrbitVisual />
+          <div className="section-header-split">
+            <div>
+              <p className="eyebrow">
+                <span className="eyebrow-dot" />
+                {t('proofEyebrow')}
+              </p>
+              <h2 className="split-title">{t('proofTitle')}</h2>
+            </div>
+            <p className="split-desc">{t('proofLead')}</p>
+          </div>
+
+          <div className="proof-cards-grid">
+            {proofItems.map((item, idx) => (
+              <div className="proof-card" key={idx}>
+                <div className="proof-card-top">
+                  <span className="proof-card-num">{item.num}</span>
+                  <ShieldCheck size={20} className="proof-icon" />
+                </div>
+                <h3 className="proof-card-label">{item.label}</h3>
+                <p className="proof-card-desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* 4. Strategic Capabilities (8 Core Services Preview) */}
+      {/* 3. Services: What you offer and what a client gets from each service */}
       <section className="capability-section section-pad">
         <div className="wrap">
           <div className="section-header-split">
             <div>
               <p className="eyebrow">
                 <span className="eyebrow-dot" />
-                02 — {s('services')}
+                {t('servicesEyebrow')}
               </p>
               <h2 className="split-title">{t('capTitle')}</h2>
             </div>
@@ -301,6 +305,17 @@ export async function HomePage() {
                   <h3>{item.name}</h3>
                 </div>
                 <p className="service-desc">{item.description}</p>
+
+                {item.deliverable && (
+                  <div className="service-card-deliverable">
+                    <div className="deliverable-label">
+                      <Sparkles size={13} />
+                      <span>{t('whatYouGet')}</span>
+                    </div>
+                    <p className="deliverable-text">{item.deliverable}</p>
+                  </div>
+                )}
+
                 <div className="service-card-action">
                   <Link href={`/contact?service=${encodeURIComponent(item.name)}`} className="service-cta-link">
                     <span>{s('askAboutService')}</span>
@@ -320,60 +335,108 @@ export async function HomePage() {
         </div>
       </section>
 
-      {/* 5. Opportunity & Partnership 5-Step Process */}
-      <section className="process-section section-pad">
-        <div className="wrap process-layout">
-          <div className="process-intro-col">
-            <p className="eyebrow process-eyebrow">
-              <span className="eyebrow-dot" />
-              {t('processEyebrow')}
-            </p>
-            <h2 className="process-title">{t('processTitle')}</h2>
-            <p className="process-lead-text">
-              {t('localContext') === 'جدة، المملكة العربية السعودية'
-                ? 'نؤمن بأن كل فرصة عظيمة تمر بمسار متدرج يبدأ بالاستماع العميق وتحديد التطلعات، وصولاً إلى بناء تحالف يحقق أثرًا مستدامًا.'
-                : 'We believe every transformative opportunity follows a structured trajectory, starting from active listening to structuring sustainable alliances.'}
-            </p>
-            <Link className="button button-outline-light" href="/opportunities">
-              <span>{t('viewMethod')}</span>
-              <ArrowUpRight size={16} />
-            </Link>
+      {/* 4. How It Works: Combined 4-stage model + practical 5-step methodology */}
+      <section className="how-it-works-section section-pad">
+        <div className="wrap">
+          <div className="section-header-split">
+            <div>
+              <p className="eyebrow">
+                <span className="eyebrow-dot" />
+                {t('howItWorksEyebrow')}
+              </p>
+              <h2 className="split-title">{t('howItWorksTitle')}</h2>
+            </div>
+            <p className="split-desc">{t('howItWorksLead')}</p>
           </div>
 
-          <div className="process-steps-col">
-            {rawSteps.map((step) => (
-              <div className="process-step-item" key={step.number}>
-                <span className="step-num-badge">{step.number}</span>
-                <div className="step-text-wrap">
-                  <h4>{step.title}</h4>
-                  <p>{step.desc}</p>
+          {/* Part A: The 4-Stage Architectural Trajectory */}
+          <div className="how-model-wrapper">
+            <StrategicOrbitVisual />
+          </div>
+
+          {/* Part B: The 5 Practical Operational Steps Underneath */}
+          <div className="how-steps-wrapper">
+            <div className="how-steps-header">
+              <h3 className="how-steps-title">{t('fiveStepsTitle')}</h3>
+              <p className="how-steps-lead">{t('fiveStepsLead')}</p>
+            </div>
+
+            <div className="how-steps-grid">
+              {rawSteps.map((step) => (
+                <div className="how-step-card" key={step.number}>
+                  <div className="how-step-top">
+                    <span className="how-step-badge">{step.number}</span>
+                    <ArrowUpRight size={16} className="how-step-icon" />
+                  </div>
+                  <h4 className="how-step-name">{step.title}</h4>
+                  <p className="how-step-desc">{step.desc}</p>
                 </div>
-                <ArrowUpRight size={18} className="step-arrow" />
-              </div>
-            ))}
+              ))}
+            </div>
+
+            <div className="how-steps-action">
+              <Link className="button button-outline-dark" href="/opportunities">
+                <span>{t('viewMethod')}</span>
+                <ArrowUpRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 6. Corporate Culture & 8 Values */}
+      {/* 5. Partners or Projects: Evidence of work and relationships with substantive descriptions */}
+      <section className="partners-preview-section section-pad">
+        <div className="wrap">
+          <div className="section-header-split">
+            <div>
+              <p className="eyebrow">
+                <span className="eyebrow-dot" />
+                {t('partnersEyebrow')}
+              </p>
+              <h2 className="split-title">{t('partnersTitle')}</h2>
+            </div>
+            <p className="split-desc">{t('partnersLead')}</p>
+          </div>
+
+          <div className="partners-preview-grid">
+            {partners.map((p, i) => (
+              <div className="partner-item-card" key={p.name}>
+                <div className="partner-card-header">
+                  <span className="partner-idx">0{i + 1}</span>
+                  <span className="partner-tag">{p.tag}</span>
+                </div>
+                <div className="partner-info">
+                  <h4>{p.name}</h4>
+                  <span className="partner-sector">{p.sector}</span>
+                </div>
+                {p.collaboration && (
+                  <p className="partner-collab-desc">{p.collaboration}</p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="section-footer-link">
+            <Link className="button button-outline-dark" href="/partners">
+              <span>{t('partnersLink')}</span>
+              <ArrowUpRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Company Values: 5 distinctive values supported by real team behaviors */}
       <section className="values-section section-pad">
         <div className="wrap">
-          <div className="values-header">
+          <div className="section-header-split">
             <div>
               <p className="eyebrow">
                 <span className="eyebrow-dot" />
                 {t('valuesEyebrow')}
               </p>
-              <h2 className="values-title">
-                {t('valuesHeadline')}
-                <br />
-                <span className="values-title-sub">{t('valuesSubheadline')}</span>
-              </h2>
+              <h2 className="split-title">{t('valuesTitle')}</h2>
             </div>
-            <Link className="button button-outline-dark" href="/about">
-              <span>{t('aboutLink')}</span>
-              <ArrowUpRight size={16} />
-            </Link>
+            <p className="split-desc">{t('valuesLead')}</p>
           </div>
 
           <div className="values-cards-grid">
@@ -384,57 +447,99 @@ export async function HomePage() {
                   <CheckCircle2 size={18} className="value-check" />
                 </div>
                 <h4>{val.name}</h4>
-                <p>{val.desc}</p>
+                <p className="value-main-desc">{val.desc}</p>
+                {val.behavior && (
+                  <div className="value-behavior-box">
+                    <span className="behavior-tag">{t('valueBehaviorLabel')}</span>
+                    <p className="behavior-text">{val.behavior}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* 7. Partner Ecosystem Preview */}
-      <section className="partners-preview-section section-pad">
-        <div className="wrap">
-          <div className="section-header-split">
-            <div>
-              <p className="eyebrow">
-                <span className="eyebrow-dot" />
-                05 — منظومة الشركاء
-              </p>
-              <h2 className="split-title">
-                {t('localContext') === 'جدة، المملكة العربية السعودية'
-                  ? 'شركاؤنا في مسيرة بناء الفرص'
-                  : 'Our Partners in Value Creation'}
-              </h2>
-            </div>
-            <Link className="button button-outline-dark" href="/partners">
-              <span>{t('partnersLink')}</span>
+          <div className="section-footer-link">
+            <Link className="button button-outline-dark" href="/about">
+              <span>{t('aboutLink')}</span>
               <ArrowUpRight size={16} />
             </Link>
           </div>
-
-          <div className="partners-preview-grid">
-            {partners.map((p, i) => (
-              <div className="partner-item-card" key={p.name}>
-                <span className="partner-idx">0{i + 1}</span>
-                <div className="partner-info">
-                  <h4>{p.name}</h4>
-                  <span className="partner-sector">{p.sector}</span>
-                </div>
-                <span className="partner-tag">{p.tag}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* 8. Conversion CTA Band */}
-      <CtaBand title={t('ctaTitle')} lead={t('ctaLead')} />
+      {/* 7. Contact Section: What happens after someone gets in touch & primary action */}
+      <section className="contact-next-section section-pad">
+        <div className="wrap">
+          <div className="contact-next-card">
+            <div className="contact-next-header">
+              <p className="eyebrow cta-eyebrow">
+                <span className="eyebrow-dot" />
+                {t('contactEyebrow')}
+              </p>
+              <h2 className="contact-next-title">{t('ctaTitle')}</h2>
+              <p className="contact-next-lead">{t('ctaLead')}</p>
+            </div>
+
+            {/* What happens next 3-step sequence */}
+            <div className="next-steps-container">
+              <h3 className="next-steps-heading">{t('whatHappensNextTitle')}</h3>
+              <div className="next-steps-grid">
+                <div className="next-step-box">
+                  <span className="next-step-num">{t('nextStep1Num')}</span>
+                  <div className="next-step-content">
+                    <h4>{t('nextStep1Title')}</h4>
+                    <p>{t('nextStep1Desc')}</p>
+                  </div>
+                </div>
+                <div className="next-step-box">
+                  <span className="next-step-num">{t('nextStep2Num')}</span>
+                  <div className="next-step-content">
+                    <h4>{t('nextStep2Title')}</h4>
+                    <p>{t('nextStep2Desc')}</p>
+                  </div>
+                </div>
+                <div className="next-step-box">
+                  <span className="next-step-num">{t('nextStep3Num')}</span>
+                  <div className="next-step-content">
+                    <h4>{t('nextStep3Title')}</h4>
+                    <p>{t('nextStep3Desc')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Direct action links */}
+            <div className="contact-next-actions">
+              <Link className="button button-red contact-primary-btn" href="/contact">
+                <span>{s('discuss')}</span>
+                <ArrowUpRight size={18} />
+              </Link>
+              <a
+                href={CONTACT_WHATSAPP_HREF}
+                target="_blank"
+                rel="noreferrer"
+                className="button button-white contact-whatsapp-btn"
+              >
+                <MessageSquare size={17} />
+                <span>{s('whatsapp')}</span>
+              </a>
+              <a
+                href={CONTACT_PHONE_HREF}
+                className="button button-outline-light contact-phone-btn"
+              >
+                <Phone size={16} />
+                <span>{CONTACT_PHONE_DISPLAY}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
 
 // STANDARD SUBPAGES
-export async function StandardPage({slug}: {slug: string}) {
+export async function StandardPage({slug, initialService}: {slug: string; initialService?: string}) {
   const s = await getTranslations('shared');
 
   // SERVICES PAGE
@@ -442,7 +547,7 @@ export async function StandardPage({slug}: {slug: string}) {
     const t = await getTranslations('servicesPage');
     return (
       <>
-        <PageIntro eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} index="01" />
+        <PageIntro eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} index="01" showBreadcrumb />
         <section className="wrap section-pad">
           <ServicesSection showFilters={true} />
         </section>
@@ -831,7 +936,7 @@ export async function StandardPage({slug}: {slug: string}) {
 
             {/* Interactive Form Component */}
             <div className="contact-main-form">
-              <ContactForm />
+              <ContactForm initialService={initialService} />
             </div>
           </div>
         </section>

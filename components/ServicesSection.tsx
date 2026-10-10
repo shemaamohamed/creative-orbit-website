@@ -14,7 +14,8 @@ import {
   ArrowUpRight,
   CheckCircle,
   HelpCircle,
-  Target
+  ChevronDown,
+  Target,
 } from 'lucide-react';
 import {Link} from '@/lib/navigation';
 
@@ -36,7 +37,8 @@ interface ServiceItem {
   category: string;
   tagline: string;
   description: string;
-  challenges: string;
+  scope?: string;
+  fit: string;
   objectives: string;
 }
 
@@ -47,7 +49,7 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
   const servicesData = useTranslations('services');
   const rawItems = (servicesData.raw('items') as ServiceItem[]) || [];
 
-  const [filter, setFilter] = useState<'all' | 'marketing' | 'growth' | 'investment'>('all');
+  const [filter, setFilter] = useState<'all' | 'marketing' | 'research' | 'growth' | 'investment' | 'other'>('all');
 
   const filteredItems = filter === 'all'
     ? rawItems
@@ -56,11 +58,11 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
   return (
     <div className="services-section-wrapper">
       {showFilters && (
-        <div className="services-filter-bar" role="tablist" aria-label={ar ? 'تصنيفات الخدمات' : 'Service categories'}>
+        <div className="services-filter-bar" role="group" aria-label={ar ? 'تصفية الخدمات حسب المجال' : 'Filter services by category'}>
           <button
             type="button"
-            role="tab"
-            aria-selected={filter === 'all'}
+            aria-pressed={filter === 'all'}
+            aria-controls="service-results"
             onClick={() => setFilter('all')}
             className={`filter-pill ${filter === 'all' ? 'is-active' : ''}`}
           >
@@ -68,8 +70,8 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
           </button>
           <button
             type="button"
-            role="tab"
-            aria-selected={filter === 'marketing'}
+            aria-pressed={filter === 'marketing'}
+            aria-controls="service-results"
             onClick={() => setFilter('marketing')}
             className={`filter-pill ${filter === 'marketing' ? 'is-active' : ''}`}
           >
@@ -77,8 +79,17 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
           </button>
           <button
             type="button"
-            role="tab"
-            aria-selected={filter === 'growth'}
+            aria-pressed={filter === 'research'}
+            aria-controls="service-results"
+            onClick={() => setFilter('research')}
+            className={`filter-pill ${filter === 'research' ? 'is-active' : ''}`}
+          >
+            {t('filterResearch')}
+          </button>
+          <button
+            type="button"
+            aria-pressed={filter === 'growth'}
+            aria-controls="service-results"
             onClick={() => setFilter('growth')}
             className={`filter-pill ${filter === 'growth' ? 'is-active' : ''}`}
           >
@@ -86,17 +97,28 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
           </button>
           <button
             type="button"
-            role="tab"
-            aria-selected={filter === 'investment'}
+            aria-pressed={filter === 'investment'}
+            aria-controls="service-results"
             onClick={() => setFilter('investment')}
             className={`filter-pill ${filter === 'investment' ? 'is-active' : ''}`}
           >
             {t('filterInvestment')}
           </button>
+          <button
+            type="button"
+            aria-pressed={filter === 'other'}
+            aria-controls="service-results"
+            onClick={() => setFilter('other')}
+            className={`filter-pill ${filter === 'other' ? 'is-active' : ''}`}
+          >
+            {t('filterOther')}
+          </button>
         </div>
       )}
 
-      <div className="services-editorial-grid">
+      {showFilters && <p className="services-results-count" aria-live="polite">{t('resultCount', {count: filteredItems.length})}</p>}
+
+      <div className="services-editorial-grid" id="service-results">
         {filteredItems.map((item) => {
           const IconComponent = iconMap[item.id] || Target;
           return (
@@ -109,37 +131,53 @@ export default function ServicesSection({showFilters = true}: {showFilters?: boo
               </div>
 
               <div className="service-card-heading">
-                <span className="service-tagline">{item.tagline}</span>
                 <h3>{item.name}</h3>
+                <span className="service-tagline">{item.tagline}</span>
               </div>
 
               <p className="service-desc">{item.description}</p>
 
-              {/* Challenges & Objectives accordion/content */}
-              <div className="service-details-box">
-                <div className="service-detail-block">
-                  <div className="detail-header">
-                    <HelpCircle size={14} className="detail-icon" />
-                    <strong>{ar ? 'التحديات المحتملة:' : 'Potential Challenges:'}</strong>
+              <details className="service-details-box">
+                <summary className="service-details-summary">
+                  <span>{t('detailsToggle')}</span>
+                  <ChevronDown size={16} aria-hidden="true" />
+                </summary>
+                <div className="service-details-content">
+                  <div className="service-detail-block">
+                    <div className="detail-header">
+                      <HelpCircle size={14} className="detail-icon" />
+                      <strong>{t('fitLabel')}</strong>
+                    </div>
+                    <p>{item.fit}</p>
                   </div>
-                  <p>{item.challenges}</p>
-                </div>
 
-                <div className="service-detail-block">
-                  <div className="detail-header">
-                    <CheckCircle size={14} className="detail-icon" />
-                    <strong>{ar ? 'أهداف التعامل المعتادة:' : 'Engagement Objectives:'}</strong>
+                  {item.scope && (
+                    <div className="service-detail-block">
+                      <div className="detail-header">
+                        <CheckCircle size={14} className="detail-icon" />
+                        <strong>{t('scopeLabel')}</strong>
+                      </div>
+                      <p>{item.scope}</p>
+                    </div>
+                  )}
+
+                  <div className="service-detail-block">
+                    <div className="detail-header">
+                      <Target size={14} className="detail-icon" />
+                      <strong>{t('aimLabel')}</strong>
+                    </div>
+                    <p>{item.objectives}</p>
                   </div>
-                  <p>{item.objectives}</p>
                 </div>
-              </div>
+              </details>
 
               <div className="service-card-action">
                 <Link
                   href={`/contact?service=${encodeURIComponent(item.name)}`}
                   className="service-cta-link"
+                  aria-label={t('ctaService', {service: item.name})}
                 >
-                  <span>{t('cta')}</span>
+                  <span>{t('ctaService', {service: item.name})}</span>
                   <ArrowUpRight size={16} />
                 </Link>
               </div>

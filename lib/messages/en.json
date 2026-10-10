@@ -33,28 +33,71 @@
     "orbitConcept": "From Connection to Sustainable Growth"
   },
   "home": {
-    "eyebrow": "Strategic Enterprise Ecosystem · Opportunity & Alliance Hub",
+    "eyebrow": "Strategic Enterprise Platform · Opportunity & Alliance Hub",
     "title": "Turning business connections into meaningful growth.",
     "lead": "We help businesses reach the partners and opportunities that support their growth.",
-    "introTitle": "From Connection to Opportunity",
-    "intro": "Creative Orbit builds bridges between companies, projects, investors, customers, and strategic partners. We discover opportunities, develop commercial relationships, and help shape collaborations that create a sustainable path to expansion.",
+    "proofEyebrow": "01 — FOUNDATIONS & CREDIBILITY",
+    "proofTitle": "A solid business foundation grounded in real capability",
+    "proofLead": "In our launch phase across the Saudi market, we prioritize complete transparency backed by verifiable foundations: established alliance networks, structured deliverables, and deep leadership expertise in commercial negotiation.",
+    "proofItems": [
+      {
+        "num": "5",
+        "label": "Active Partner Sectors",
+        "desc": "Established alliances spanning IT, engineering advisory, construction, consumer manufacturing, and commercial trade."
+      },
+      {
+        "num": "8",
+        "label": "Dedicated Service Tracks",
+        "desc": "Comprehensive capabilities delivering concrete outputs—from event blueprints and market studies to investor pitch readiness."
+      },
+      {
+        "num": "100%",
+        "label": "Saudi Market Focus",
+        "desc": "Anchored in Jeddah in step with Vision 2030 economic transformation, paving the way for regional and global expansion."
+      },
+      {
+        "num": "1",
+        "label": "Responsible Governance Framework",
+        "desc": "Rigorous mutual suitability analysis and structured pacts that protect and align all counterparty interests without exaggeration."
+      }
+    ],
+    "servicesEyebrow": "02 — OUR SERVICES & CAPABILITIES",
     "capTitle": "A strategic partner in the work behind growth",
-    "capLead": "Understand the opportunity. Connect the right people. Engineer actionable paths forward across diverse business sectors.",
-    "processTitle": "A considered five-step approach from first dialogue to shared growth",
+    "capLead": "Understand the opportunity. Connect the right people. Engineer actionable paths forward with clear deliverables at each step.",
+    "whatYouGet": "What you receive (Deliverables):",
+    "howItWorksEyebrow": "03 — HOW IT WORKS",
+    "howItWorksTitle": "One clear process from first conversation to shared growth",
+    "howItWorksLead": "We combine an overarching strategic trajectory with disciplined operational execution, ensuring every opportunity creates lasting enterprise value.",
+    "fourStagesTitle": "The Strategic Model",
+    "fourStagesLead": "A continuous progression connecting each milestone to the next",
+    "fiveStepsTitle": "Operational Execution Steps",
+    "fiveStepsLead": "Disciplined methodology from initial discovery to active alliance management",
+    "partnersEyebrow": "04 — PARTNER ECOSYSTEM",
+    "partnersTitle": "Our Partners in Value Creation",
+    "partnersLead": "We take pride in collaborating with leading entities across vital sectors to generate mutual value and open new growth channels.",
+    "valuesEyebrow": "05 — CULTURE & CORPORATE VALUES",
+    "valuesTitle": "Enduring values reflected in day-to-day team behaviors",
+    "valuesLead": "We go beyond abstract slogans by translating our values into distinct professional behaviors across every meeting, negotiation, and partnership.",
+    "valueBehaviorLabel": "How it shows up in our work:",
+    "contactEyebrow": "06 — NEXT STEP",
     "ctaTitle": "A promising connection can be the start of something transformative.",
     "ctaLead": "Tell us what you are building, exploring, or hoping to scale. Let’s start a focused, meaningful conversation.",
+    "whatHappensNextTitle": "What happens after you reach out?",
+    "nextStep1Num": "01",
+    "nextStep1Title": "Inquiry Review & Scoping",
+    "nextStep1Desc": "We review your inquiry details within 24 business hours to understand your venture's exact focus and requirements.",
+    "nextStep2Num": "02",
+    "nextStep2Title": "Service & Deliverable Alignment",
+    "nextStep2Desc": "We identify the most suitable service track and propose concrete deliverables tailored to your business objectives.",
+    "nextStep3Num": "03",
+    "nextStep3Title": "Executive Consultation",
+    "nextStep3Desc": "We convene a direct exploratory consultation with leadership to discuss alliance avenues and launch execution.",
     "localContext": "Jeddah, Saudi Arabia",
     "regionalAmbition": "Saudi roots with regional and global ambition.",
     "imageAlt": "High-level strategic corporate meeting in a modern Jeddah executive tower",
     "connectionCaption": "Strategic connections unlock new commercial horizons",
-    "processEyebrow": "03 — OUR OPPORTUNITY METHODOLOGY",
-    "valuesEyebrow": "04 — CORPORATE CULTURE & VALUES",
-    "valuesHeadline": "Built on trust and credibility.",
-    "valuesSubheadline": "Focused on real impact and sustainable outcomes.",
-    "orbitBadgeTitle": "Strategic Orbit",
-    "orbitBadgeDesc": "Connections ➔ Opportunities ➔ Partnerships ➔ Growth",
-    "viewMethod": "Explore our approach",
-    "aboutLink": "Meet the company",
+    "viewMethod": "Explore our methodology and opportunities",
+    "aboutLink": "Meet the company and leadership",
     "partnersLink": "View all partners"
   },
   "about": {
@@ -105,15 +148,23 @@
   },
   "servicesPage": {
     "eyebrow": "OUR SERVICES & CAPABILITIES",
-    "title": "An integrated ecosystem of growth-focused capabilities.",
-    "lead": "Eight specialized service tracks spanning marketing, event management, market research, business development, strategic partnerships, and investment attraction for domestic and international enterprises.",
-    "cta": "Discuss This Service",
-    "ctaTitle": "Let’s explore collaborative horizons for your next initiative.",
-    "ctaLead": "Select a specific capability or get in touch to structure a customized strategic engagement tailored to your organization.",
-    "allTabs": "All Services",
+    "title": "Services to help your business reach new customers, markets, and partners.",
+    "lead": "Eight services across marketing and events, market research, business development and partnerships, investment and expansion, and real estate activities within the company’s registered scope.",
+    "cta": "Discuss this service",
+    "ctaTitle": "Let’s identify what your project needs next.",
+    "ctaLead": "Choose a service to start a focused inquiry, or contact us if you are unsure which path fits.",
+    "allTabs": "All services (8)",
     "filterMarketing": "Marketing & Events",
     "filterGrowth": "Business Development & Partnerships",
-    "filterInvestment": "Investment & Expansion"
+    "filterInvestment": "Investment & Expansion",
+    "ctaService": "Discuss {service}",
+    "filterResearch": "Market Research",
+    "filterOther": "Other Services",
+    "resultCount": "{count} services shown",
+    "detailsToggle": "Service fit and scope",
+    "fitLabel": "This service may fit if…",
+    "scopeLabel": "Potential scope",
+    "aimLabel": "What we can help you work toward"
   },
   "opportunities": {
     "eyebrow": "OPPORTUNITIES & STRATEGIC ALLIANCES",
@@ -223,80 +274,88 @@
         "number": "01",
         "name": "Advertising & Marketing",
         "category": "marketing",
-        "tagline": "Impactful presence and resonant identity",
-        "description": "Comprehensive marketing and advertising solutions that empower organizations to build an impactful market presence, engage target audiences directly, and enhance overall brand equity.",
-        "challenges": "Lack of market differentiation, low brand engagement, or the need to launch an enterprise brand with authoritative coherence.",
-        "objectives": "Drive brand awareness, execute targeted commercial campaigns, and develop high-converting content strategies that reinforce revenue growth."
+        "tagline": "Marketing that reaches your audience",
+        "description": "We plan marketing and advertising activity to help clarify your message and reach your target audience.",
+        "objectives": "Clarify your marketing offer and support communication with your target audience.",
+        "scope": "Depending on the project, scope may include audience and message definition, campaign planning, and content development.",
+        "fit": "You are preparing to launch a product, refresh your brand presence, or improve audience communication."
       },
       {
         "id": "events",
         "number": "02",
         "name": "Event Management",
         "category": "marketing",
-        "tagline": "Strategic platforms for executive networking",
-        "description": "End-to-end planning and curation of corporate events, conferences, and executive forums that elevate brand presence and facilitate high-level deal-making.",
-        "challenges": "Complex event logistics, underperforming event ROI, or lack of curated environments to host high-value partners and investors.",
-        "objectives": "Execute corporate assemblies, convene key industry stakeholders, and generate qualified partnership opportunities aligned with strategic goals."
+        "tagline": "Events that bring clients and partners together",
+        "description": "We plan and organize events, conferences, and business forums around your goals and intended audience.",
+        "objectives": "Deliver a well-organized event that creates opportunities to connect with relevant audiences and partners.",
+        "scope": "Depending on the agreement, scope may include pre-event coordination, logistics planning, and participant communication.",
+        "fit": "You need to organize an event or conference and coordinate its requirements."
       },
       {
         "id": "research",
         "number": "03",
         "name": "Market Research & Opinion Polls",
-        "category": "growth",
-        "tagline": "Data-driven commercial decisions",
-        "description": "Rigorous collection and analysis of market intelligence, consumer behavior, and sentiment to empower business leaders to make informed commercial choices.",
-        "challenges": "Market ambiguity, insufficient granular data on Saudi consumer preferences, and the financial risk of unvalidated expansions.",
-        "objectives": "Deliver analytical reports and survey benchmarks supporting product rollouts, market entry evaluation, and competitive positioning."
+        "category": "research",
+        "tagline": "A clearer view of your market and customers",
+        "description": "We gather and analyze market and customer information to support business decisions.",
+        "objectives": "Identify findings and questions that help you assess your next options.",
+        "scope": "A study may include market and competitor review, opinion research, and a findings report within the agreed method and scope.",
+        "fit": "You are considering a product launch or market entry, or need to understand customer preferences."
       },
       {
         "id": "development",
         "number": "04",
         "name": "Business Development & Opportunity Creation",
         "category": "growth",
-        "tagline": "Unlocking sustainable revenue pathways",
-        "description": "Discovering and structuring latent commercial and investment opportunities, opening non-traditional avenues for sustained growth and multi-sector expansion.",
-        "challenges": "Stagnating organic growth, difficulty entering new sectors, or having a promising concept without the network needed to operationalize it.",
-        "objectives": "Map untapped potential, evaluate commercial viability, and structure actionable partnership avenues that ensure sustainable inflows."
+        "tagline": "Turn an opportunity into assessable next steps",
+        "description": "We assess commercial opportunities and help identify partners and routes to market.",
+        "objectives": "Shape practical steps to assess and pursue the opportunity.",
+        "scope": "Work may include defining the opportunity, an initial commercial assessment, and suggested steps or potential partners.",
+        "fit": "You have a business idea or project and are exploring a commercial opportunity or expansion path."
       },
       {
         "id": "alliances",
         "number": "05",
         "name": "Strategic Partnerships & Alliances",
         "category": "growth",
-        "tagline": "Creating enduring mutual enterprise value",
-        "description": "Structuring and nurturing robust alliances between corporations, project founders, investors, and key entities to build shared value supporting long-term goals.",
-        "challenges": "Operational silos, asymmetric negotiation terms, and the absence of strategic allies to accelerate market penetration.",
-        "objectives": "Align counterparty interests, architect partnership frameworks, and steward negotiations through to formal collaboration agreements."
+        "tagline": "Partners with aligned goals",
+        "description": "We help identify potential counterparties, align interests, and coordinate collaboration discussions.",
+        "objectives": "Clarify areas of alignment and possible next steps for collaboration.",
+        "scope": "Work may include identifying potential organizations, arranging introductions and meetings, and supporting discussions. Legal agreements should be reviewed by qualified counsel.",
+        "fit": "You are looking for a partner or need to coordinate collaboration among several parties."
       },
       {
         "id": "investor-relations",
         "number": "06",
         "name": "Investment Attraction & Investor Relations",
         "category": "investment",
-        "tagline": "Connecting opportunities with aligned capital",
-        "description": "Developing professional channels to engage serious investors, presenting commercial projects with institutional rigor and clarity.",
-        "challenges": "Difficulty articulating the value proposition to institutional investors, or seeking a trusted partner with verified access to capital networks.",
-        "objectives": "Prepare institutional opportunity dossiers, coordinate with financing partners, and foster strategic alignment between capital and venture."
+        "tagline": "Connect with relevant investors",
+        "description": "We help present business opportunities and coordinate conversations with suitable investors or financing entities.",
+        "objectives": "Present the opportunity clearly and facilitate an initial discussion between parties.",
+        "scope": "Work may include organizing opportunity information, identifying relevant parties, and coordinating introductions or meetings. Funding is not guaranteed.",
+        "fit": "You are exploring potential investors or financing entities for a project."
       },
       {
         "id": "expansion",
         "number": "07",
         "name": "Local & International Business Expansion",
         "category": "investment",
-        "tagline": "Expanding from Saudi Arabia to regional horizons",
-        "description": "Exploring high-potential markets and establishing cross-border partnerships that support expansion across Saudi regions, the GCC, and beyond.",
-        "challenges": "Barriers to market entry, unfamiliar regulatory and commercial nuances, and the difficulty of identifying trustworthy regional partners.",
-        "objectives": "Facilitate smooth market entry, connect entities with vetted local operators, and establish an agile regional expansion footprint."
+        "tagline": "Plan the next market entry steps",
+        "description": "We help assess target markets and explore local partners to support expansion plans.",
+        "objectives": "Assess options and prepare an expansion plan suited to your needs.",
+        "scope": "Work may include an initial market review, potential partner identification, and entry steps tailored to the country and sector.",
+        "fit": "You are planning to expand within Saudi Arabia or into a regional market."
       },
       {
         "id": "real-estate",
         "number": "08",
         "name": "Real Estate Activities & Services",
-        "category": "growth",
-        "tagline": "Specialized contractual real estate services",
-        "description": "Delivering specialized real estate activities within the company’s licensed scope on a contractual or fee basis.",
-        "challenges": "The need for a strategic partner to link property opportunities with investors or structure commercial marketing and operating models.",
-        "objectives": "Provide professional contractual facilitation, connecting developers and commercial properties with qualified partners and buyers."
+        "category": "other",
+        "tagline": "Market and coordinate commercial property opportunities",
+        "description": "We provide marketing and connection services for commercial real estate opportunities within the company’s registered activities and under an agreed contract.",
+        "objectives": "Support clear presentation of opportunities and communication between relevant parties.",
+        "scope": "The specific service scope is set by direct agreement and limited to the company’s registered real estate activities.",
+        "fit": "You represent a commercial real estate opportunity and are exploring marketing or relevant connections."
       }
     ]
   },
@@ -304,35 +363,28 @@
     "items": [
       {
         "name": "Trust",
-        "desc": "We build all relationships upon integrity, transparency, and uncompromising commitment."
+        "desc": "We build all relationships upon integrity, transparency, and uncompromising commitment.",
+        "behavior": "We verify every detail rigorously and document agreements with complete transparency, free of hyperbole."
       },
       {
         "name": "Partnership",
-        "desc": "We seek mutual interests and cultivate enduring, multi-year alliances."
+        "desc": "We seek mutual interests and cultivate enduring, multi-year alliances.",
+        "behavior": "We structure win-win collaborative models, prioritizing long-term alignment over short-term transactional gain."
       },
       {
         "name": "Opportunity Creation",
-        "desc": "We perceive latent possibilities where others see obstacles and market friction."
+        "desc": "We perceive latent possibilities where others see obstacles and market friction.",
+        "behavior": "We analyze cross-industry intersections to unlock commercial synergies that open new revenue channels."
       },
       {
-        "name": "Innovation",
-        "desc": "We engineer novel approaches to generate value and competitive differentiation."
-      },
-      {
-        "name": "Results",
-        "desc": "We maintain an unwavering focus on real, measurable outcomes for our partners."
+        "name": "Impact & Results",
+        "desc": "We maintain an unwavering focus on real, measurable outcomes for our partners.",
+        "behavior": "We anchor every advisory dialogue to tangible deliverables—from structured blueprints to finalized agreements."
       },
       {
         "name": "Professionalism",
-        "desc": "We adhere to the highest benchmarks of quality in negotiation, conduct, and execution."
-      },
-      {
-        "name": "Ambition",
-        "desc": "We launch with confidence from Saudi Arabia while thinking with a global perspective."
-      },
-      {
-        "name": "Sustainability",
-        "desc": "We build long-term enterprise value that evolves resiliently with market shifts."
+        "desc": "We adhere to the highest benchmarks of quality in negotiation, conduct, and execution.",
+        "behavior": "We safeguard client confidentiality and lead executive negotiations with institutional rigor and poise."
       }
     ]
   },
@@ -370,27 +422,32 @@
       {
         "name": "Sadeem For IT",
         "sector": "Information Technology & Digital Solutions",
-        "tag": "Technology & IT"
+        "tag": "Technology & IT",
+        "collaboration": "Collaborating on digital infrastructure, enterprise tech solutions, and connecting ventures with digital transformation systems."
       },
       {
         "name": "Weqayati Al Tijariya Co.",
         "sector": "Commercial & Safety Solutions",
-        "tag": "Commercial & Safety Solutions"
+        "tag": "Commercial & Safety Solutions",
+        "collaboration": "Collaboration in commercial supplies, workplace safety solutions, and expanding distribution channels across industrial entities."
       },
       {
         "name": "Kayan Mattress Co.",
         "sector": "Manufacturing & Consumer Products",
-        "tag": "Manufacturing & Consumer Products"
+        "tag": "Manufacturing & Consumer Products",
+        "collaboration": "Collaboration on national consumer manufacturing promotion, wholesale channel development, and hospitality market penetration."
       },
       {
         "name": "Eamar Altanmia for construction",
         "sector": "Construction, Contracting & Infrastructure",
-        "tag": "Construction & Contracting"
+        "tag": "Construction & Contracting",
+        "collaboration": "Collaboration on sourcing construction ventures, infrastructure projects, and building alliances with real estate developers."
       },
       {
         "name": "Kafaa Engineering Consultancy Co.",
         "sector": "Engineering Consultancy & Advisory",
-        "tag": "Engineering Consultancy"
+        "tag": "Engineering Consultancy",
+        "collaboration": "Strategic collaboration on specialized engineering advisory, technical feasibility assessments, and master-planning projects."
       }
     ]
   },
