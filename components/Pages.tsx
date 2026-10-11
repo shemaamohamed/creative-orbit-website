@@ -47,15 +47,14 @@ export async function CtaBand({
 }) {
   const s = await getTranslations('shared');
   return (
-    <section className="cta-band">
+    <section className="cta-band mb-20 ">
       <div className="wrap cta-band-inner">
         <div className="cta-mark-col">
           <OrbitMark className="cta-orbit-mark" />
         </div>
         <div className="cta-copy-col">
           <p className="eyebrow cta-eyebrow">
-            <span className="eyebrow-dot" />
-            CREATIVE ORBIT · {s('opportunityCta')}
+            {s('opportunityCta')}
           </p>
           <h2 className="cta-title">{title}</h2>
           <p className="cta-lead">{lead}</p>
