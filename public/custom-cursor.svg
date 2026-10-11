@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <!-- Multi-stage ambient blue glow filter -->
+    <filter id="cursorAura" x="-40%" y="-40%" width="200%" height="200%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3.5" result="blurDeep" />
+      <feGaussianBlur stdDeviation="1.5" result="blurClose" />
+      <feMerge>
+        <feMergeNode in="blurDeep" />
+        <feMergeNode in="blurClose" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Diffuse Cyan / Blue Glow Behind Cursor -->
+  <path d="M12 10 L12 33 L18 27 L24 38 L28 36 L22 25 L30 25 Z" 
+        fill="#38bdf8" 
+        stroke="#60a5fa"
+        stroke-width="5"
+        stroke-linejoin="round"
+        opacity="0.85" 
+        filter="url(#cursorAura)" />
+
+  <!-- Crisp White Outer Border with Black Core Body -->
+  <path d="M12 10 L12 33 L18 27 L24 38 L28 36 L22 25 L30 25 Z" 
+        fill="#000000" 
+        stroke="#ffffff" 
+        stroke-width="2.2" 
+        stroke-linejoin="round" 
+        stroke-linecap="round" />
+</svg>

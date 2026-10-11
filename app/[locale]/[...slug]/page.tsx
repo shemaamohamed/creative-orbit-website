@@ -1,4 +1,4 @@
-import {notFound} from 'next/navigation';
+    import {notFound} from 'next/navigation';
 import {getTranslations} from 'next-intl/server';
 import {routing} from '@/lib/routing';
 import {StandardPage} from '@/components/Pages';
