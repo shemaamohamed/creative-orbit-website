@@ -47,9 +47,6 @@ export default async function SiteFooter() {
             </div>
             <span className="brand-wordmark footer-brand-wordmark">
               <strong className="brand-title footer-title">{ar ? 'كرييتيف أوربيت' : 'Creative Orbit'}</strong>
-              <small className="brand-subtitle footer-subtitle">
-                {ar ? 'للتسويق وتطوير الأعمال' : 'MARKETING CO.'}
-              </small>
             </span>
           </Link>
 
@@ -127,7 +124,7 @@ export default async function SiteFooter() {
               <Phone size={16} />
               <div>
                 <span className="contact-card-label">{ar ? 'الاتصال الهاتفي' : 'Phone'}</span>
-                <strong>{CONTACT_PHONE_DISPLAY}</strong>
+                <strong dir="ltr" className="phone-number">{CONTACT_PHONE_DISPLAY}</strong>
               </div>
               <ArrowUpRight size={14} className="card-arrow" />
             </a>

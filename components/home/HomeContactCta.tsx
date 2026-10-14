@@ -72,7 +72,7 @@ export default async function HomeContactCta() {
               className="button button-outline-light contact-phone-btn"
             >
               <Phone size={16} />
-              <span>{CONTACT_PHONE_DISPLAY}</span>
+              <span dir="ltr" className="phone-number">{CONTACT_PHONE_DISPLAY}</span>
             </a>
           </div>
         </div>

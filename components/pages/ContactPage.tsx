@@ -39,7 +39,7 @@ export default async function ContactPage({initialService}: ContactPageProps = {
               </p>
               <a href={CONTACT_PHONE_HREF} className="direct-phone-link">
                 <Phone size={20} />
-                <span>{CONTACT_PHONE_DISPLAY}</span>
+                <span dir="ltr" className="phone-number">{CONTACT_PHONE_DISPLAY}</span>
                 <ArrowUpRight size={18} />
               </a>
 

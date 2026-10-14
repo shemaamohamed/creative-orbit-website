@@ -113,8 +113,62 @@
     "prioritiesHeadline": "Practical services for your next business decision",
     "leadershipTitle": "Executive Leadership",
     "leader": "Mohammed Ayedh Al-Sufyani",
-    "role": "Chief Executive Officer | CEO",
-    "bio": "Mohammed Ayedh Al-Sufyani brings practical experience in business development, opportunity creation, and strategic partnerships. He works with companies to understand their needs, explore collaboration opportunities, and connect relevant parties around actionable next steps.",
+    "entrepreneurBadge": "Entrepreneur",
+    "scopeBadge": "Local & International Alliances",
+    "tagline": "Transforming relationships into opportunities, opportunities into partnerships, and partnerships into growth.",
+    "ceoBadge": "Creative Orbit | Founder & CEO",
+    "bio": "A Saudi entrepreneur specializing in business development, attracting companies, and transforming opportunities into thriving partnerships and commercial ventures, alongside forging strategic alliances between business entities. His expertise spans marketing, information and communications technology, economic platforms, hospitality, and smart digital solutions.",
+    "philosophyLabel": "Operational Philosophy & Vision",
+    "bioPhilosophy": "His work is anchored in a clear, pragmatic philosophy: identifying the right partner, negotiating high-potential opportunities, and structuring collaborative frameworks that generate sustained mutual value for all stakeholders.",
+    "sectorsTitle": "Key Focus Sectors & Expertise:",
+    "sectors": [
+      "Business Development & Company Attraction",
+      "Strategic Alliances & Marketing",
+      "Information & Communications Technology",
+      "Economic Platforms & Investment Ecosystems",
+      "Specialty Hospitality & Exclusive Representation",
+      "Smart Digital Solutions & Transformation"
+    ],
+    "rolesTitle": "Executive Positions & Strategic Alliances",
+    "rolesSubtitle": "Leadership portfolio and strategic partnerships across business, technology, and investment sectors",
+    "positions": [
+      {
+        "entity": "Creative Orbit Marketing Co.",
+        "role": "Founder & Chief Executive Officer (CEO)",
+        "tag": "Marketing & Business Development",
+        "scope": "Leading corporate vision, business development ecosystems, opportunity creation, and commercial growth alliances locally and internationally."
+      },
+      {
+        "entity": "Mal Wa Amal Business Platform",
+        "role": "Founder & Executive Director",
+        "tag": "Business Media & Economic Platforms",
+        "scope": "Founding and executive management of the business platform, highlighting investment opportunities and economic market insights."
+      },
+      {
+        "entity": "Atyaf Holool Al-Maham for Telecom & IT",
+        "role": "Executive Director",
+        "tag": "Telecom & Information Technology",
+        "scope": "Executive oversight and development of enterprise IT solutions, telecom infrastructure, and digital transformation."
+      },
+      {
+        "entity": "Motawif App",
+        "role": "Strategic Partner",
+        "tag": "Smart Digital Pilgrim Solutions",
+        "scope": "Strategic partnership focusing on digital ecosystem growth and smart solutions for the Hajj, Umrah, and hospitality sector."
+      },
+      {
+        "entity": "Aghsan Almajd Co.",
+        "role": "Strategic Partner & Exclusive Agent",
+        "tag": "Hospitality & Specialty Coffee",
+        "scope": "Directing strategic partnerships and exclusive representation for corporate brands (Coffee Roasterz, Repose Cafe, Bon Osool Al-Dheyafa)."
+      },
+      {
+        "entity": "Al-Sebaei Group (Educational Academy)",
+        "role": "Strategic Partner",
+        "tag": "Education & Academic Training",
+        "scope": "Building strategic alliances and partnerships for developing academic programs, educational initiatives, and collaborative ventures."
+      }
+    ],
     "perspectiveEyebrow": "OUR PERSPECTIVE & PHILOSOPHY",
     "aboutValuesTitle": "How We Work with Partners",
     "values": [

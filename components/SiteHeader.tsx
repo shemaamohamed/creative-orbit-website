@@ -39,7 +39,17 @@ export default function SiteHeader() {
   ];
 
   function switchLocale() {
-    router.replace(pathname, {locale: ar ? 'en' : 'ar'});
+    const nextLocale = ar ? 'en' : 'ar';
+    document.documentElement.lang = nextLocale;
+    document.documentElement.dir = nextLocale === 'ar' ? 'rtl' : 'ltr';
+    if (nextLocale === 'ar') {
+      document.body.classList.add('font-cairo');
+      document.body.classList.remove('font-outfit');
+    } else {
+      document.body.classList.add('font-outfit');
+      document.body.classList.remove('font-cairo');
+    }
+    router.replace(pathname, {locale: nextLocale});
     setOpen(false);
   }
 
@@ -61,9 +71,6 @@ export default function SiteHeader() {
             </span>
             <span className="brand-wordmark">
               <strong className="brand-title">{ar ? 'كرييتيف أوربيت' : 'Creative Orbit'}</strong>
-              <small className="brand-subtitle">
-                {ar ? 'للتسويق وتطوير الأعمال' : 'MARKETING CO.'}
-              </small>
             </span>
           </Link>
 
